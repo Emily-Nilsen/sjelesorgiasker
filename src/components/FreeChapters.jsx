@@ -7,19 +7,19 @@ export function FreeChapters() {
     <section
       id="free-chapters"
       aria-label="Free preview"
-      className="scroll-mt-14 bg-blue-600 sm:scroll-mt-32"
+      className="scroll-mt-14 bg-fuchsia-600 sm:scroll-mt-32"
     >
       <div className="overflow-hidden lg:relative">
         <Container
           size="md"
-          className="relative grid grid-cols-1 items-end gap-y-12 py-20 lg:static lg:grid-cols-2 lg:py-28 xl:py-32"
+          className="relative grid items-end grid-cols-1 py-20 gap-y-12 lg:static lg:grid-cols-2 lg:py-28 xl:py-32"
         >
-          <Pattern className="absolute -top-32 left-0 w-full sm:left-3/4 sm:-top-5 sm:ml-8 sm:w-auto md:left-2/3 lg:left-auto lg:right-2 lg:ml-0 xl:right-auto xl:left-2/3" />
+          <Pattern className="absolute left-0 w-full -top-32 sm:left-3/4 sm:-top-5 sm:ml-8 sm:w-auto md:left-2/3 lg:left-auto lg:right-2 lg:ml-0 xl:right-auto xl:left-2/3" />
           <div>
-            <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
+            <h2 className="text-5xl font-extrabold tracking-tight text-white font-display sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
               Get the free sample chapters
             </h2>
-            <p className="mt-4 text-lg tracking-tight text-blue-200">
+            <p className="mt-4 text-lg tracking-tight text-fuchsia-200">
               Enter your email address and I’ll send you a sample from the book
               containing two of my favorite chapters.
             </p>
@@ -37,14 +37,14 @@ export function FreeChapters() {
                   required
                   aria-label="Email address"
                   placeholder="Email address"
-                  className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
+                  className="relative z-10 w-full px-4 py-2 text-base text-white bg-transparent appearance-none peer placeholder:text-white/70 focus:outline-none sm:py-3"
                 />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
+                <div className="absolute inset-0 border rounded-md border-white/20 peer-focus:border-fuchsia-300 peer-focus:bg-fuchsia-500 peer-focus:ring-1 peer-focus:ring-fuchsia-300 sm:rounded-xl" />
               </div>
               <Button
                 type="submit"
                 color="white"
-                className="mt-4 w-full sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none"
+                className="w-full mt-4 sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none"
               >
                 Get free chapters
               </Button>

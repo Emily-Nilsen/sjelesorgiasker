@@ -10,9 +10,9 @@ export function Introduction() {
       aria-label="Introduction"
       className="pt-20 pb-16 sm:pb-20 md:pt-36 lg:py-32"
     >
-      <Container className="text-lg tracking-tight text-slate-700">
-        <p className="text-4xl font-bold tracking-tight font-display text-slate-900">
-          “Det går bra med meg. Jeg klarer meg.”
+      <Container className="text-lg tracking-tight text-stone-700">
+        <p className="text-4xl font-bold tracking-tight font-display text-stone-900">
+          “Sjelesorgprosjektet” odio nisi, lectus dis nulla..
         </p>
         <p className="mt-4">
           Before I learned how to design icons myself, I always imagined that
@@ -36,7 +36,7 @@ export function Introduction() {
             'Figma features and keyboard shortcuts to speed up your workflow',
           ].map((feature) => (
             <li key={feature} className="flex">
-              <CheckIcon className="flex-none w-8 h-8 fill-blue-500" />
+              <CheckIcon className="flex-none w-8 h-8 fill-fuchsia-500" />
               <span className="ml-4">{feature}</span>
             </li>
           ))}
@@ -49,7 +49,7 @@ export function Introduction() {
         <p className="mt-10">
           <Link
             href="#free-chapters"
-            className="text-base font-medium text-blue-600 hover:text-blue-800"
+            className="text-base font-medium text-fuchsia-600 hover:text-fuchsia-800"
           >
             Get two free chapters straight to your inbox{' '}
             <span aria-hidden="true">&rarr;</span>

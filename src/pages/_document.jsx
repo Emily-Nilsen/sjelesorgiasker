@@ -27,6 +27,10 @@ export default function Document() {
           rel="stylesheet"
           href="https://use.typekit.net/six0oik.css"
         ></link>
+        <link
+          rel="icon"
+          href="https://res.cloudinary.com/dt3k2apqd/image/upload/v1669744309/Sjelesorg%20i%20Asker/favicon_dark_bg_zvlud3.svg"
+        />
       </Head>
       <body>
         <Main />

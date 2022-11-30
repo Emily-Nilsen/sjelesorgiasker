@@ -4,19 +4,15 @@ import { Popover } from '@headlessui/react'
 import clsx from 'clsx'
 
 const sections = [
+  { id: 'posts', title: 'Innlegg' },
+  { id: 'team', title: 'Sjelesørgere' },
+  { id: 'peace-of-mind', title: 'Sjelefred' },
   {
-    id: 'table-of-contents',
-    title: (
-      <>
-        <span className="hidden lg:inline">Table of contents</span>
-        <span className="lg:hidden">Contents</span>
-      </>
-    ),
+    id: 'recreation-week',
+    title: 'Rekreasjonsuke',
   },
-  { id: 'screencasts', title: 'Screencasts' },
-  { id: 'resources', title: 'Resources' },
-  { id: 'pricing', title: 'Pricing' },
-  { id: 'author', title: 'Author' },
+
+  { id: 'contact', title: 'Ta kontakt' },
 ]
 
 function MenuIcon({ open, ...props }) {
@@ -95,7 +91,7 @@ export function NavBar() {
                 <>
                   <span
                     aria-hidden="true"
-                    className="font-mono text-sm text-blue-600"
+                    className="font-mono text-sm text-fuchsia-600"
                   >
                     {(mobileActiveIndex + 1).toString().padStart(2, '0')}
                   </span>
@@ -117,7 +113,7 @@ export function NavBar() {
                     <span className="absolute inset-0" />
                   </>
                 )}
-                <MenuIcon open={open} className="h-6 w-6 stroke-slate-700" />
+                <MenuIcon open={open} className="w-6 h-6 stroke-slate-700" />
               </Popover.Button>
             </div>
             <Popover.Panel className="absolute inset-x-0 top-0 bg-white/95 py-3.5 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur">
@@ -130,7 +126,7 @@ export function NavBar() {
                 >
                   <span
                     aria-hidden="true"
-                    className="font-mono text-sm text-blue-600"
+                    className="font-mono text-sm text-fuchsia-600"
                   >
                     {(sectionIndex + 1).toString().padStart(2, '0')}
                   </span>
@@ -140,7 +136,7 @@ export function NavBar() {
                 </Popover.Button>
               ))}
             </Popover.Panel>
-            <div className="absolute inset-x-0 bottom-full z-10 h-4 bg-white" />
+            <div className="absolute inset-x-0 z-10 h-4 bg-white bottom-full" />
           </>
         )}
       </Popover>
@@ -156,8 +152,8 @@ export function NavBar() {
                 className={clsx(
                   'flex w-full flex-col items-center justify-center border-b-2 before:mb-2 before:font-mono before:text-sm before:content-[counter(section,decimal-leading-zero)]',
                   sectionIndex === activeIndex
-                    ? 'border-blue-600 bg-blue-50 text-blue-600 before:text-blue-600'
-                    : 'border-transparent before:text-slate-500 hover:bg-blue-50/40 hover:before:text-slate-900'
+                    ? 'border-fuchsia-600 bg-fuchsia-50 text-fuchsia-600 before:text-fuchsia-600'
+                    : 'border-transparent before:text-slate-500 hover:bg-fuchsia-50/40 hover:before:text-slate-900'
                 )}
               >
                 {section.title}
