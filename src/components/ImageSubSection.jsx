@@ -6,13 +6,13 @@ import sommerAsker from '@/images/sommerAsker.webp'
 
 function Testimonial() {
   return (
-    <figure>
+    <figure className="relative z-10 max-w-md mx-auto text-center lg:mx-0 lg:text-left">
       <blockquote className="mt-2">
-        <p className="text-3xl font-bold tracking-tight font-display text-stone-900 sm:text-4xl">
+        <p className="text-xl font-medium font-display text-stone-900">
           “I’ve looked at clouds from both sides now.”
         </p>
       </blockquote>
-      <figcaption className="mt-4 text-sm text-stone-500">
+      <figcaption className="mt-2 text-sm text-stone-500">
         <strong className="font-semibold text-fuchsia-600 before:content-['—_']">
           Joni Mitchell
         </strong>
@@ -32,19 +32,22 @@ function getSeason() {
 
 export function ImageSubSection() {
   return (
-    <div className="relative h-full">
+    <div className="relative h-full border-stone-300/20 lg:border-b">
       <div aria-hidden="true" className="relative animate-fade-in">
         <Image
           src={'winter' ? vinterAsker : sommerAsker}
           alt="Asker kirke på vinteren og sommeren"
           className="object-cover object-center w-full h-96 animate-fade-in"
         />
-
-        {/* <div className="absolute inset-0 h-full bg-gradient-to-t from-white" /> */}
+        <div
+          className="absolute inset-0 bg-fuchsia-300 mix-blend-multiply"
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 h-full bg-gradient-to-t from-white" />
       </div>
       <div className="relative px-4 pb-16 mx-auto -mt-12 max-w-7xl sm:px-6 sm:pb-24 lg:px-8">
         <div className="max-w-2xl mx-auto text-center lg:max-w-4xl">
-          {/* <Testimonial /> */}
+          <Testimonial />
           {/* <h2 className="text-3xl font-bold tracking-tight font-display text-stone-900 sm:text-4xl">
             Technical Specifications
           </h2>

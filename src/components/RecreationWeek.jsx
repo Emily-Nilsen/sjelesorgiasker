@@ -28,7 +28,7 @@ const tableOfContents = {
   },
 }
 
-export function TableOfContents() {
+export function RecreationWeek() {
   return (
     <section
       id="recreation-week"
@@ -43,12 +43,14 @@ export function TableOfContents() {
           Rekreasjonsuke i juni med tilbud om samtaler, tidebønner, osv.
         </p>
         <p className="mt-4 text-lg tracking-tight text-stone-700">
-          “Sjelesorgprosjektet” inkluderer......
+          “Sjelesorgprosjektet” inkluderer...imperdiet quis dapibus eleifend
+          varius euismod est, urna accumsan justo hac sagittis dis pharetra,
+          proin cubilia rutrum ac bibendum.
         </p>
         <Expandable>
           {({ isExpanded }) => (
             <>
-              <ol role="list" className="mt-16 space-y-10 sm:space-y-16">
+              {/* <ol role="list" className="mt-16 space-y-10 sm:space-y-16">
                 {Object.entries(tableOfContents)
                   .slice(0, isExpanded ? undefined : 2)
                   .map(([title, pages]) => (
@@ -83,8 +85,8 @@ export function TableOfContents() {
                       </ol>
                     </li>
                   ))}
-              </ol>
-              <Expandable.Button>See more</Expandable.Button>
+              </ol> */}
+              <Expandable.Button>Se mer</Expandable.Button>
             </>
           )}
         </Expandable>

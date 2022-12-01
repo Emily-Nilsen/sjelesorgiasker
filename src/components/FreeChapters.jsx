@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Pattern } from '@/components/Pattern'

@@ -11,8 +11,8 @@ import { NavBar } from '@/components/NavBar'
 // import { Pricing } from '@/components/Pricing'
 import { PeaceOfMind } from '@/components/PeaceOfMind'
 import { Team } from '@/components/Team'
-import { TableOfContents } from '@/components/TableOfContents'
-import { Testimonial } from '@/components/Testimonial'
+import { RecreationWeek } from '@/components/RecreationWeek'
+import { Quote } from '@/components/Quote'
 // import { Testimonials } from '@/components/Testimonials'
 import avatarImage1 from '@/images/avatars/avatar-1.png'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
@@ -32,50 +32,53 @@ export default function Home() {
       <NavBar />
       <ImageSubSection />
       <Posts />
-      <Testimonial
-        id="testimonial-from-gerardo-stark"
+      <Quote
+        id="Quote-from-gerardo-stark"
         author={{
           name: 'Gerardo Stark',
           role: 'Creator of Pandemicons',
-          image: avatarImage2,
+          image:
+            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/praying_square_j2j5e9.jpg',
         }}
       >
         <p>
-          “I’ve tried to create my own icons in the past but quickly got
-          frustrated and gave up. Now I sell my own custom icon sets online.”
+          “Id dictum dis interdum molestie praesent integer sed, pharetra ligula
+          duis per mus aenean nisl.”
         </p>
-      </Testimonial>
+      </Quote>
       <Team />
-      <Testimonial
-        id="testimonial-from-tommy-stroman"
+      <Quote
+        id="Quote-from-tommy-stroman"
         author={{
           name: 'Tommy Stroman',
           role: 'Front-end developer',
-          image: avatarImage1,
+          image:
+            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/flower_in_crack_ybj3ac.jpg',
         }}
       >
         <p>
-          “I didn’t know a thing about icon design until I read this book. Now I
-          can create any icon I need in no time. Great resource!”
+          “Imperdiet quis dapibus eleifend varius euismod est, urna accumsan
+          justo hac sagittis dis pharetra, proin cubilia rutrum ac bibendum.”
         </p>
-      </Testimonial>
+      </Quote>
       <PeaceOfMind />
       <FreeChapters />
-      <TableOfContents />
+      <RecreationWeek />
 
-      <Testimonial
-        id="testimonial-from-gerardo-stark"
+      <Quote
+        id="Quote-from-gerardo-stark"
         author={{
           name: 'Gerardo Stark',
           role: 'Creator of Pandemicons',
-          image: avatarImage2,
+          image:
+            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/praying_square_j2j5e9.jpg',
         }}
       >
         <p>
-          “I’ve tried to create my own icons in the past but quickly got
-          frustrated and gave up. Now I sell my own custom icon sets online.”
+          “Eget felis varius mus orci, quisque urna habitant himenaeos laoreet
+          mollis fames, natoque sed etiam ultricies massa.”
         </p>
-      </Testimonial>
+      </Quote>
 
       {/* <Pricing /> */}
       {/* <Testimonials /> */}

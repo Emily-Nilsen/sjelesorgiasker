@@ -9,9 +9,8 @@ import videoPlayerImage from '@/images/resources/video-player.svg'
 
 const resources = [
   {
-    title: 'Figma icon templates',
-    description:
-      'Pefectly structured templates for quickly designing new icons at dozens of common sizes.',
+    title: 'Tittel 1',
+    description: 'Odio nisi, lectus dis nulla. Tempus quis et.',
     image: function FigmaImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
@@ -27,9 +26,9 @@ const resources = [
     },
   },
   {
-    title: 'Weekly icon teardowns',
+    title: 'Tittel 2',
     description:
-      'Weekly videos where we dissect and recreate beautiful icons we find on the web.',
+      'Ultrices maecenas vitae rutrum dolor ultricies donec risus sodales. Tempus quis et.',
     image: function VideoPlayerImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center">
@@ -52,9 +51,9 @@ const resources = [
     },
   },
   {
-    title: 'Community of icon designers',
+    title: 'Tittel 3',
     description:
-      "A private Discord server where you can get help and give feedback on each others' work.",
+      'Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum dolor ultricies donec risus sodales.',
     image: function DiscordImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
@@ -87,9 +86,8 @@ export function PeaceOfMind() {
           onsdag.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Design assets, icon teardowns, and a community of fellow icon
-          designers where you can ask questions, get feedback, and accelerate
-          your learning.
+          Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum dolor
+          ultricies donec risus sodales. Tempus quis et.
         </p>
       </Container>
       <Container size="lg" className="mt-16">
