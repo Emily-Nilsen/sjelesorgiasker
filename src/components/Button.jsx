@@ -23,7 +23,7 @@ const variantStyles = {
     fuchsia:
       'border-fuchsia-300 text-fuchsia-600 hover:border-fuchsia-400 hover:bg-fuchsia-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600 active:text-fuchsia-600/70 disabled:opacity-40 disabled:hover:border-fuchsia-300 disabled:hover:bg-transparent',
     fuchsiaLight:
-      'border-fuchsia-50 text-fuchsia-600 hover:border-fuchsia-100 hover:bg-fuchsia-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600 active:text-fuchsia-600/70 disabled:opacity-40 disabled:hover:border-fuchsia-300 disabled:hover:bg-transparent',
+      'border-fuchsia-50 text-fuchsia-100 lg:text-fuchsia-600 hover:border-fuchsia-100 hover:bg-fuchsia-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600 active:text-fuchsia-600/70 disabled:opacity-40 disabled:hover:border-fuchsia-300 disabled:hover:bg-transparent',
   },
 }
 

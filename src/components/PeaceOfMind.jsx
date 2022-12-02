@@ -13,7 +13,7 @@ const resources = [
     description: 'Odio nisi, lectus dis nulla. Tempus quis et.',
     image: function FigmaImage() {
       return (
-        <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
+        <div className="absolute inset-0 flex items-center justify-center">
           <Image
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1669835439/Sjelesorg%20i%20Asker/sjelefred01_xh7ba4.jpg"
             alt="Sjelefred i Asker kirke"
@@ -33,17 +33,13 @@ const resources = [
       return (
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
-            className="absolute inset-0 object-cover w-full h-full"
-            src={abstractBackgroundImage}
-            alt=""
-            sizes="(min-width: 1280px) 21rem, (min-width: 1024px) 33vw, (min-width: 768px) 19rem, (min-width: 640px) 50vw, 100vw"
-          />
-          <Image
             className="relative"
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1669835386/Sjelesorg%20i%20Asker/AdobeStock_78726353_zk2rwl.jpg"
             alt="Sjelefred i Asker kirke"
-            width={5260}
-            height={3648}
+            fill
+            objectFit="cover"
+            // width={5260}
+            // height={3648}
             unoptimized
           />
         </div>
@@ -56,14 +52,18 @@ const resources = [
       'Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum dolor ultricies donec risus sodales.',
     image: function DiscordImage() {
       return (
-        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
-          <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1669835440/Sjelesorg%20i%20Asker/sjelefred02_rulvvv.jpg"
-            alt="Sjelefred i Asker kirke"
-            width={1600}
-            height={895}
-            unoptimized
-          />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="relative object-cover w-full h-full">
+            <Image
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1669835440/Sjelesorg%20i%20Asker/sjelefred02_rulvvv.jpg"
+              alt="Sjelefred i Asker kirke"
+              // width={1600}
+              // height={895}
+              objectFit="cover"
+              fill
+              unoptimized
+            />
+          </div>
         </div>
       )
     },

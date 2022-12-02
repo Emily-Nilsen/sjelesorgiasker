@@ -12,7 +12,7 @@ export function Introduction() {
     >
       <Container className="text-lg tracking-tight text-stone-700">
         <p className="text-4xl font-bold tracking-tight font-display text-stone-900">
-          “Sjelesorgprosjektet” odio nisi, lectus dis nulla..
+          Sjelesorgprosjektet ... odio nisi, lectus dis nulla..
         </p>
         <p className="mt-4">
           Id torquent porta fusce mi nec hendrerit facilisi felis sed mauris, eu

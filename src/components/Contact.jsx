@@ -51,8 +51,8 @@ export function Contact() {
               Ta kontakt
             </SectionHeading>
             <p className="mt-8 text-5xl font-extrabold tracking-tight font-display text-stone-900 sm:text-6xl">
-              <span className="block text-fuchsia-600">Ta kontakt –</span> Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit.
+              <span className="block text-fuchsia-600">Ta kontakt –</span> Vi
+              vil høre fra deg.
             </p>
             <p className="mt-4 text-lg tracking-tight text-stone-700">
               I’ve been designing icons professionally for over a decade and
