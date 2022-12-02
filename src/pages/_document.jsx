@@ -2,7 +2,7 @@ import { Head, Html, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html className="antialiased bg-white scroll-smooth" lang="en">
+    <Html className="antialiased bg-white scroll-smooth" lang="no">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
