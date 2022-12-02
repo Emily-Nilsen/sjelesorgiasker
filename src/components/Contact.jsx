@@ -30,7 +30,7 @@ export function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-title"
-      className="relative pt-8 pb-3 scroll-mt-14 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
+      className="relative pt-16 pb-3 scroll-mt-14 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
     >
       <div className="absolute inset-x-0 bottom-0 top-1/2 text-stone-900/10 [mask-image:linear-gradient(transparent,white)]">
         <GridPattern x="50%" y="100%" />
@@ -54,7 +54,7 @@ export function Contact() {
               <span className="block text-fuchsia-600">Ta kontakt –</span> Vi
               vil høre fra deg.
             </p>
-            <p className="mt-4 text-lg tracking-tight text-stone-700">
+            <p className="mt-4 text-lg tracking-tight opacity-0 text-stone-700">
               I’ve been designing icons professionally for over a decade and
               have worked with dozens of the biggest brands to create custom
               sets for their products. I’m an accomplished conference speaker,
@@ -63,7 +63,7 @@ export function Contact() {
               and honed my way of teaching to really click for anyone who has
               the itch to start designing their own icons.
             </p>
-            <p className="mt-8">
+            <p className="mt-8 opacity-0">
               <Link
                 href="#"
                 className="inline-flex items-center text-base font-medium tracking-tight text-fuchsia-600"

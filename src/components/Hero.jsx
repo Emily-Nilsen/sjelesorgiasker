@@ -54,9 +54,9 @@ function MovingGradient() {
       <div className="relative flex items-center w-1/3 h-1/3 sm:h-full sm:w-full sm:items-end">
         <div className="relative h-96 w-96 max-w-lg bg-white sm:mb-28 sm:ml-20 sm:h-[500px] sm:w-full">
           {/* Three blobs */}
-          <div className="absolute left-0 w-40 h-40 rounded-full opacity-100 animation-delay-2000 top-28 animate-text animate-blob bg-gradient-to-tl from-white via-yellow-300 to-fuchsia-500 mix-blend-multiply blur-2xl filter sm:-left-4 sm:top-0 sm:h-72 sm:w-72"></div>
-          <div className="absolute w-40 h-40 rounded-full top-16 animate-text bg-gradient-to-b from-fuchsia-500 via-pink-300 to-yellow-300 opacity-70 mix-blend-multiply blur-2xl filter sm:-right-4 sm:top-0 sm:h-72 sm:w-72"></div>
-          <div className="absolute bottom-0 left-0 w-40 h-40 rounded-full animation-delay-4000 animate-text bg-gradient-to-r from-white via-yellow-300 to-fuchsia-500 opacity-70 mix-blend-multiply blur-2xl filter sm:-bottom-8 sm:left-20 sm:h-72 sm:w-72"></div>
+          <div className="absolute left-0 w-40 h-40 rounded-full opacity-100 animation-delay-2000 top-28 animate-text animate-blob bg-gradient-to-tl from-fuchsia-100 via-yellow-300 to-fuchsia-500 mix-blend-multiply blur-2xl filter sm:-left-4 sm:top-0 sm:h-72 sm:w-72"></div>
+          <div className="absolute w-40 h-40 rounded-full top-16 animate-text bg-gradient-to-b from-fuchsia-500 via-fuchsia-300 to-yellow-300 opacity-70 mix-blend-multiply blur-2xl filter sm:-right-4 sm:top-0 sm:h-72 sm:w-72"></div>
+          <div className="absolute bottom-0 left-0 w-40 h-40 rounded-full animation-delay-4000 animate-text bg-gradient-to-r from-yellow-100 via-yellow-300 to-fuchsia-500 opacity-70 mix-blend-multiply blur-2xl filter sm:-bottom-8 sm:left-20 sm:h-72 sm:w-72"></div>
         </div>
       </div>
     </div>
@@ -97,7 +97,7 @@ export function Hero() {
   return (
     <>
       {/* HERO MOBILE */}
-      <header className="bg-t relative flex h-[100vh] max-h-[670px] w-full flex-col overflow-hidden sm:hidden">
+      <header className="bg-t relative flex h-[100vh] max-h-[700px] w-full flex-col overflow-hidden sm:hidden">
         <Logo />
         {/* Hero image */}
         <div className="relative h-[600px]">

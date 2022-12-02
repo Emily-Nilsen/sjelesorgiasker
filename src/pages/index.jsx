@@ -2,18 +2,16 @@ import Head from 'next/head'
 
 import { Contact } from '@/components/Contact'
 import { Footer } from '@/components/Footer'
-import { FreeChapters } from '@/components/FreeChapters'
+import { Invitation } from '@/components/Invitation'
 import { Hero } from '@/components/Hero'
 import { ImageSubSection } from '@/components/ImageSubSection'
 import { Introduction } from '@/components/Introduction'
 import { Posts } from '@/components/Posts'
 import { NavBar } from '@/components/NavBar'
-// import { Pricing } from '@/components/Pricing'
 import { PeaceOfMind } from '@/components/PeaceOfMind'
 import { Team } from '@/components/Team'
 import { RecreationWeek } from '@/components/RecreationWeek'
 import { Quote } from '@/components/Quote'
-// import { Testimonials } from '@/components/Testimonials'
 import avatarImage1 from '@/images/avatars/avatar-1.png'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
 
@@ -24,7 +22,7 @@ export default function Home() {
         <title>Sjelesorg i Asker</title>
         <meta
           name="description"
-          content="A book and video course that teaches you how to design your own icons from scratch. "
+          content="Sorg og kjærlighetssorg, eksistensielle spørsmål og troskriser - det er ingenting som er for stort eller for lite å snakke med en sjelesørger om. "
         />
       </Head>
       <Hero />
@@ -35,8 +33,8 @@ export default function Home() {
       <Quote
         id="Quote-from-gerardo-stark"
         author={{
-          name: 'Gerardo Stark',
-          role: 'Creator of Pandemicons',
+          name: 'Forfatternavn',
+          role: 'Sitatkilde',
           image:
             'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/praying_square_j2j5e9.jpg',
         }}
@@ -50,8 +48,8 @@ export default function Home() {
       <Quote
         id="Quote-from-tommy-stroman"
         author={{
-          name: 'Tommy Stroman',
-          role: 'Front-end developer',
+          name: 'Forfatternavn',
+          role: 'Sitatkilde',
           image:
             'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/flower_in_crack_ybj3ac.jpg',
         }}
@@ -62,14 +60,14 @@ export default function Home() {
         </p>
       </Quote>
       <PeaceOfMind />
-      <FreeChapters />
+      <Invitation />
       <RecreationWeek />
 
       <Quote
         id="Quote-from-gerardo-stark"
         author={{
-          name: 'Gerardo Stark',
-          role: 'Creator of Pandemicons',
+          name: 'Forfatternavn',
+          role: 'Sitatkilde',
           image:
             'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/praying_square_j2j5e9.jpg',
         }}
