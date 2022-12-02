@@ -106,7 +106,7 @@ export function Team() {
                     className="object-cover rounded-lg shadow-lg bg-yellow-300/50"
                     src={person.imageUrl}
                     alt={person.name}
-                    layout="fill"
+                    fill
                   />
                 </div>
 

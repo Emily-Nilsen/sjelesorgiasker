@@ -1,11 +1,16 @@
 export default {
-  name: 'author',
-  title: 'Author',
+  name: 'team',
+  title: 'Team',
   type: 'document',
   fields: [
     {
-      name: 'name',
-      title: 'Name',
+      name: 'navn',
+      title: 'Navn',
+      type: 'string',
+    },
+    {
+      name: 'rolle',
+      title: 'Rolle',
       type: 'string',
     },
     {
@@ -33,16 +38,16 @@ export default {
         {
           title: 'Block',
           type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
+          styles: [{ title: 'Normal', value: 'normal' }],
           lists: [],
         },
       ],
     },
   ],
-  preview: {
-    select: {
-      title: 'name',
-      media: 'image',
-    },
-  },
+  // preview: {
+  //   select: {
+  //     title: 'name',
+  //     media: 'image',
+  //   },
+  // },
 }

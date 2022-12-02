@@ -103,7 +103,7 @@ export function Posts() {
         </p>
         <p className="mt-10">
           <Link
-            href="#free-chapters"
+            href="#contact"
             className="text-base font-medium text-fuchsia-600 hover:text-fuchsia-800"
           >
             Ta kontakt med oss! <span aria-hidden="true">&rarr;</span>
