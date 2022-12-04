@@ -29,7 +29,7 @@ export default function Document() {
         ></link>
         <link
           rel="icon"
-          href="https://res.cloudinary.com/dt3k2apqd/image/upload/v1669744309/Sjelesorg%20i%20Asker/favicon_dark_bg_zvlud3.svg"
+          href="https://res.cloudinary.com/dt3k2apqd/image/upload/v1670131516/Sjelesorg%20i%20Asker/sjelesorgiasker_logo_eoexut.svg"
         />
       </Head>
       <body>
