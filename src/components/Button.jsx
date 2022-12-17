@@ -21,7 +21,7 @@ const variantStyles = {
     stone:
       'border-stone-200 text-stone-900 hover:border-stone-300 hover:bg-stone-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-600 active:border-stone-200 active:bg-stone-50 active:text-stone-900/70 disabled:opacity-40 disabled:hover:border-stone-200 disabled:hover:bg-transparent',
     fuchsia:
-      'border-fuchsia-300 text-fuchsia-600 hover:border-fuchsia-400 hover:bg-fuchsia-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600 active:text-fuchsia-600/70 disabled:opacity-40 disabled:hover:border-fuchsia-300 disabled:hover:bg-transparent',
+      'border-fuchsia-300 lg:text-fuchsia-100 text-fuchsia-600 hover:border-fuchsia-400 hover:bg-fuchsia-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600 active:text-fuchsia-600/70 disabled:opacity-40 disabled:hover:border-fuchsia-300 disabled:hover:bg-transparent hover:text-fuchsia-600',
     fuchsiaLight:
       'border-fuchsia-50 text-fuchsia-100 lg:text-fuchsia-600 hover:border-fuchsia-100 hover:bg-fuchsia-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600 active:text-fuchsia-600/70 disabled:opacity-40 disabled:hover:border-fuchsia-300 disabled:hover:bg-transparent',
   },

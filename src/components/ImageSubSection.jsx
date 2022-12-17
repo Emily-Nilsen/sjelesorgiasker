@@ -35,14 +35,16 @@ export function ImageSubSection() {
     <div className="relative h-full border-stone-300/20 lg:border-b">
       <div aria-hidden="true" className="relative animate-fade-in">
         <Image
-          src={'winter' ? vinterAsker : sommerAsker}
-          alt="Asker kirke på vinteren og sommeren"
+          src="https://res.cloudinary.com/dt3k2apqd/image/upload/f_auto,q_auto/Sjelesorg%20i%20Asker/therapy_02_hyjlzb.jpg"
+          width={5345}
+          height={3563}
+          alt="Photo by Priscilla Du Preez on Unsplash"
           className="object-cover object-center w-full h-96 animate-fade-in"
         />
-        <div
+        {/* <div
           className="absolute inset-0 bg-fuchsia-300 mix-blend-multiply"
           aria-hidden="true"
-        />
+        /> */}
         <div className="absolute inset-0 h-full bg-gradient-to-t from-white" />
       </div>
       <div className="relative px-4 pb-16 mx-auto -mt-12 max-w-7xl sm:px-6 sm:pb-24 lg:px-8">
