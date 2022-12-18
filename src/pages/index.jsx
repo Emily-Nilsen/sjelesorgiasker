@@ -1,4 +1,7 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
+import clsx from 'clsx'
 
 import { Contact } from '@/components/Contact'
 import { Footer } from '@/components/Footer'

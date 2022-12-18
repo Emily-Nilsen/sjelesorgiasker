@@ -69,7 +69,9 @@ export function Contact() {
             </p>
             <p className="mt-8 opacity-100">
               <Link
-                href="#"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.facebook.com/%C3%98stenstad-kirke-2273108242925774"
                 className="inline-flex items-center text-base font-medium tracking-tight text-fuchsia-600"
               >
                 <TwitterIcon className="w-10 h-10 fill-current" />

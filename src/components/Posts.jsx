@@ -1,7 +1,48 @@
+import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
+import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
+
+function CardEyebrow({
+  as: Component = 'p',
+  decorate = false,
+  className,
+  children,
+  ...props
+}) {
+  return (
+    <Component
+      className={clsx(
+        className,
+        'relative z-10 order-first mb-3 flex items-center text-sm text-stone-400 dark:text-stone-400',
+        decorate && 'pl-3.5'
+      )}
+      {...props}
+    >
+      {decorate && (
+        <span
+          className="absolute inset-y-0 left-0 flex items-center"
+          aria-hidden="true"
+        >
+          <span className="h-4 w-0.5 rounded-full bg-stone-200 dark:bg-stone-500" />
+        </span>
+      )}
+      {children}
+    </Component>
+  )
+}
+
+function formatDate(dateString) {
+  return new Date(`${dateString}T00:00:00Z`).toLocaleDateString('no-NO', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  })
+}
 
 export function Posts() {
   return (
@@ -16,15 +57,20 @@ export function Posts() {
         <SectionHeading number="1" id="introduction-title">
           Innlegg
         </SectionHeading>
+
         <p className="mt-8 text-4xl font-bold tracking-tight font-display text-slate-900">
           “Det går bra med meg. Jeg klarer meg.”
         </p>
+
         <figcaption className="mt-4 text-lg text-stone-700">
           <strong className="font-semibold text-fuchsia-600 before:content-['—_']">
             Av Astrid Sætrang Morvik
           </strong>
           , Sokneprest med master i klinisk sjelesorg
         </figcaption>
+        <CardEyebrow as="time" dateTime="2022-09-05" decorate>
+          {formatDate('2022-09-05')}
+        </CardEyebrow>
         <p className="mt-8">
           Joda, du klarer deg sikkert, og for noen fungerer det best å ikke
           dvele ved livets nedturer. Men mange av oss har det bedre når vi får
