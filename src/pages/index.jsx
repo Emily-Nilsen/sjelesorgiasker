@@ -36,7 +36,7 @@ export default function Home() {
           name: 'Forfatternavn',
           role: 'Sitatkilde',
           image:
-            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/praying_square_j2j5e9.jpg',
+            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/therapy_01_cvjhwa.jpg',
         }}
       >
         <p>
