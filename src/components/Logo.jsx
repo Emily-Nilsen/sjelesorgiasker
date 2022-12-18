@@ -38,9 +38,11 @@ const letter = {
   },
 }
 
-export function Logo() {
+export function Logo({ height, width }) {
   return (
     <svg
+      height={height}
+      width={width}
       id="Layer_2"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"

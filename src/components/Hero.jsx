@@ -38,15 +38,15 @@ export function Hero() {
         aria-hidden="true"
       />
       <div className="absolute top-0 left-0 hidden p-6 sm:block">
-        <div className="h-28 w-28 md:h-40 md:w-40">
-          <Logo />
+        <div>
+          <Logo width="150px" height="150px" />
         </div>
       </div>
       <header className="overflow-hidden bg-t lg:bg-t lg:px-5">
         <div className="z-1 relative mx-auto grid max-w-6xl grid-cols-1 grid-rows-[auto_1fr] gap-y-16 pt-16 md:pt-20 lg:grid-cols-12 lg:gap-y-20 lg:px-3 lg:pb-36 lg:pt-20 xl:py-32">
           <div className="relative flex items-end lg:col-span-5 lg:row-span-2">
-            <div className="relative z-10 flex w-64 mx-auto rounded-none shadow-none opacity-100 bg-t sm:hidden md:w-80 lg:w-auto">
-              <Logo />
+            <div className="relative z-10 flex mx-auto rounded-none shadow-none opacity-100 bg-t sm:hidden">
+              <Logo width="256px" height="256px" />
             </div>
           </div>
           <div className="relative px-4 sm:px-6 lg:col-span-7 lg:pr-0 lg:pb-14 lg:pl-16 xl:pl-20">
