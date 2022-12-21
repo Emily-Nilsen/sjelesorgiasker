@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
+import { Switch } from '@headlessui/react'
 
 import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
@@ -17,7 +19,7 @@ import {
   useTransform,
 } from 'framer-motion'
 
-function TwitterIcon(props) {
+function FacebookIcon(props) {
   return (
     <svg aria-hidden="true" viewBox="0 0 320 512" {...props}>
       <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
@@ -25,7 +27,13 @@ function TwitterIcon(props) {
   )
 }
 
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
 export function Contact() {
+  const [agreed, setAgreed] = useState(false)
+
   return (
     <section
       id="contact"
@@ -58,15 +66,239 @@ export function Contact() {
               <span className="block text-fuchsia-600">Ta kontakt –</span> Vi
               vil høre fra deg.
             </p>
-            <p className="mt-4 text-lg tracking-tight opacity-0 text-stone-700">
-              I’ve been designing icons professionally for over a decade and
-              have worked with dozens of the biggest brands to create custom
-              sets for their products. I’m an accomplished conference speaker,
-              and have been teaching icon design workshops every month for the
-              last three years. I’ve worked with designers of all skill levels
-              and honed my way of teaching to really click for anyone who has
-              the itch to start designing their own icons.
+            <p className="mt-4 text-lg tracking-tight text-stone-600">
+              Om du fyller ut kontaktskjemaet under tar vi snart kontakt.
             </p>
+            <AuthLayout>
+              <form
+                action="#"
+                subject="Kontakt Sjelesorg i Asker"
+                name="Sjelesorg i Asker - Kontakt skjema"
+                data-netlify="true"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="form-name"
+                  value="Sjelesorg i Asker - Kontakt skjema"
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="Kontakt Sjelesorg i Asker"
+                />
+                <div className="grid grid-cols-2 gap-6">
+                  <TextField
+                    // className="col-span-full"
+                    label="Fornavn"
+                    id="first_name"
+                    name="first_name"
+                    type="text"
+                    autoComplete="given-name"
+                    required
+                  />
+                  <TextField
+                    // className="col-span-full"
+                    label="Etternavn"
+                    id="last_name"
+                    name="last_name"
+                    type="text"
+                    autoComplete="family-name"
+                    required
+                  />
+                  <TextField
+                    label="Telefon"
+                    id="telehon"
+                    name="telehon"
+                    type="tel"
+                    autoComplete="tel"
+                    required
+                  />
+                  <TextField
+                    // className="col-span-full"
+                    label="E-post"
+                    id="email"
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    required
+                  />
+                  {/* <fieldset className="sm:col-span-2">
+                    <legend className="block text-sm font-medium text-stone-700">
+                      Ønsker du en bestemt sjelesørger?
+                    </legend>
+                    <div className="grid grid-cols-1 mt-4 gap-y-4">
+                      <div className="flex items-center">
+                        <input
+                          id="sjelesørger-navn-1"
+                          name="sjelesørger"
+                          defaultValue="navn-1"
+                          type="radio"
+                          className="w-4 h-4 border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
+                        />
+                        <label htmlFor="sjelesørger-navn-1" className="ml-3">
+                          <span className="block text-sm text-stone-700">
+                            Navn 1
+                          </span>
+                        </label>
+                      </div>
+                      <div className="flex items-center">
+                        <input
+                          id="sjelesørger-navn-2"
+                          name="sjelesørger"
+                          defaultValue="navn-2"
+                          type="radio"
+                          className="w-4 h-4 border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
+                        />
+                        <label htmlFor="sjelesørger-navn-2" className="ml-3">
+                          <span className="block text-sm text-stone-700">
+                            Navn 2
+                          </span>
+                        </label>
+                      </div>
+                      <div className="flex items-center">
+                        <input
+                          id="sjelesørger-navn-3"
+                          name="sjelesørger"
+                          defaultValue="navn-3"
+                          type="radio"
+                          className="w-4 h-4 border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
+                        />
+                        <label htmlFor="sjelesørger-navn-3" className="ml-3">
+                          <span className="block text-sm text-stone-700">
+                            Navn 3
+                          </span>
+                        </label>
+                      </div>
+                      <div className="flex items-center">
+                        <input
+                          id="sjelesørger-navn-4"
+                          name="sjelesørger"
+                          defaultValue="navn-4"
+                          type="radio"
+                          className="w-4 h-4 border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
+                        />
+                        <label htmlFor="sjelesørger-navn-4" className="ml-3">
+                          <span className="block text-sm text-stone-700">
+                            Navn 4
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset> */}
+                  <SelectField
+                    // className="col-span-full"
+                    label="Ønsker du en bestemt sjelesørger?"
+                    id="referral-source"
+                    name="referral_source"
+                  >
+                    <option>Uspesifisert</option>
+                    <option>Navn 1</option>
+                    <option>Navn 2</option>
+                    <option>Navn 3</option>
+                    <option>Navn 4</option>
+                  </SelectField>
+                  <div className="col-span-2 pt-2">
+                    <div className="flex justify-between">
+                      <label
+                        htmlFor="form-message"
+                        className="block mb-2 text-sm font-semibold text-stone-900"
+                      >
+                        Hva ønsker du å arbeide med i samtalene? (Ikke skriv
+                        sensitiv informasjon)
+                      </label>
+                      <span
+                        id="form-message-description"
+                        className="text-sm text-slate-500"
+                      >
+                        {/* Max */}
+                      </span>
+                    </div>
+                    <div className="mt-1">
+                      <textarea
+                        id="form-message"
+                        required
+                        maxLength="500"
+                        name="form-message"
+                        aria-describedby="form-message-description"
+                        rows={4}
+                        className="shadow-none block w-full min-w-0 flex-auto appearance-none rounded-md border border-stone-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-stone-800/5 placeholder:text-stone-400 focus:border-fuchsia-500 focus:outline-none focus:ring-4 focus:ring-fuchsia-500/10 dark:border-stone-700 dark:bg-stone-700/[0.15] dark:text-stone-200 dark:placeholder:text-stone-500 dark:focus:border-fuchsia-400 dark:focus:ring-fuchsia-400/10 sm:text-sm"
+                        defaultValue={''}
+                      />
+                    </div>
+                  </div>
+                </div>
+                {/* Agree */}
+
+                <fieldset className="mt-6">
+                  <div className="space-y-4">
+                    <div className="relative flex items-start">
+                      <div className="flex items-center h-5">
+                        <input
+                          id="samtykke"
+                          name="samtykke"
+                          type="checkbox"
+                          required
+                          className="w-4 h-4 rounded border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
+                        />
+                      </div>
+                      <div className="ml-3 text-sm">
+                        <label
+                          htmlFor="samtykke"
+                          className="font-medium tracking-normal text-stone-600"
+                        >
+                          For å sikre at den sjelesorgen som gis blir best
+                          mulig, samtykker jeg i at min sjelesørger tar imot
+                          veiledning i et lukket forum. Ingen opplysninger vil
+                          bli gitt der som kan identifisere meg.
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                {/* <div className="my-6 sm:col-span-2">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 p-1">
+                      <Switch
+                        checked={agreed}
+                        onChange={setAgreed}
+                        className={classNames(
+                          agreed ? 'bg-fuchsia-600' : 'bg-stone-200',
+                          'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2'
+                        )}
+                      >
+                        <span className="sr-only">Samtykkelse</span>
+                        <span
+                          aria-hidden="true"
+                          className={classNames(
+                            agreed ? 'translate-x-5' : 'translate-x-0',
+                            'shadow inline-block h-5 w-5 transform rounded-full bg-white ring-0 transition duration-200 ease-in-out'
+                          )}
+                        />
+                      </Switch>
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-base leading-normal text-stone-500">
+                        For å sikre at den sjelesorgen som gis blir best mulig,
+                        samtykker jeg i at min sjelesørger tar imot veiledning i
+                        et lukket forum. Ingen opplysninger vil bli gitt der som
+                        kan identifisere meg.
+                      </p>
+                    </div>
+                  </div>
+                </div> */}
+                <div className="flex justify-end">
+                  <Button
+                    type="submit"
+                    color="fuchsia"
+                    className="justify-end px-10 mt-8 w-fit"
+                  >
+                    Send inn
+                  </Button>
+                </div>
+              </form>
+            </AuthLayout>
             <p className="mt-8 opacity-100">
               <Link
                 target="_blank"
@@ -74,8 +306,8 @@ export function Contact() {
                 href="https://www.facebook.com/%C3%98stenstad-kirke-2273108242925774"
                 className="inline-flex items-center text-base font-medium tracking-tight text-fuchsia-600"
               >
-                <TwitterIcon className="w-10 h-10 fill-current" />
-                <span className="ml-4">Follow on Facebook</span>
+                <FacebookIcon className="w-10 h-10 fill-current" />
+                <span className="ml-4">Følg oss på Facebook</span>
               </Link>
             </p>
           </div>

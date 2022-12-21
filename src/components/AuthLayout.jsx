@@ -23,25 +23,27 @@ function BackgroundIllustration(props) {
 
 export function AuthLayout({ title, subtitle, children }) {
   return (
-    <main className="flex min-h-full pt-16 overflow-hidden sm:py-28">
-      <div className="flex flex-col w-full max-w-2xl px-4 mx-auto sm:px-6">
+    <main className="flex min-h-full pt-0 overflow-hidden sm:py-16">
+      <div className="flex flex-col w-full max-w-2xl px-0 mx-left sm:px-0">
         <Link href="/" aria-label="Home">
           <div className="flex"></div>
         </Link>
-        <div className="relative mt-12 sm:mt-16">
+        <div className="relative mt-0 sm:mt-0">
           <BackgroundIllustration
             width="1090"
             height="1090"
-            className="absolute -top-7 left-1/2 -z-10 h-[788px] -translate-x-1/2 stroke-teal-200/30 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:-top-9 sm:h-auto"
+            className="absolute -top-7 left-1/2 -z-10 h-[788px] -translate-x-1/2 stroke-fuchsia-200/30 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:-top-9 sm:h-auto"
           />
-          <h1 className="text-4xl font-extrabold tracking-tight text-center text-zinc-900">
+          <h1 className="text-4xl font-extrabold tracking-tight text-center text-stone-900">
             {title}
           </h1>
           {subtitle && (
-            <p className="mt-3 text-lg text-center text-zinc-600">{subtitle}</p>
+            <p className="mt-3 text-lg text-center text-stone-600">
+              {subtitle}
+            </p>
           )}
         </div>
-        <div className="flex-auto px-4 py-10 mt-10 -mx-4 bg-white shadow-2xl shadow-zinc-900/10 sm:mx-0 sm:flex-none sm:rounded-5xl sm:p-24">
+        <div className="flex-auto px-4 py-10 mt-10 -mx-4 shadow-none bg-t shadow-stone-900/10 sm:mx-0 sm:flex-none sm:rounded-none sm:p-1">
           {children}
         </div>
       </div>
