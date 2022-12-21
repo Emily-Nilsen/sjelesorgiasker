@@ -32,6 +32,7 @@ export function Hero() {
         alt="Sjelesorg i Asker logo"
         priority
         fill
+        unoptimized
       />
       <div
         className="absolute inset-0 bg-stone-600 mix-blend-hard-light"
