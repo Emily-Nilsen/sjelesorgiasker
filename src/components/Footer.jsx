@@ -4,7 +4,7 @@ import Image from 'next/image'
 export function Footer() {
   return (
     <footer className="relative pt-5 pb-20 sm:pb-32 sm:pt-14">
-      <div className="flex justify-center py-4">
+      <div className="flex flex-col items-center justify-center py-4 sm:flex-row">
         {/* Sjelesorg i Asker */}
         <div className="flex items-center pb-2">
           <div
@@ -27,13 +27,15 @@ export function Footer() {
           <div className="w-full pl-2">
             <h2 className="text-base font-medium text-zinc-900">
               Sjelesorg i Asker{' '}
-              <span className="font-normal text-zinc-600">samarbeider med</span>{' '}
+              <span className="hidden font-normal text-zinc-600 sm:inline">
+                samarbeider med
+              </span>{' '}
             </h2>
           </div>
         </div>
-
+        <p className="font-normal text-zinc-600 sm:hidden">samarbeider med</p>
         {/* Kirken.no */}
-        <div className="flex items-center pb-2 pl-2">
+        <div className="flex items-center py-2 pl-2 sm:py-0 sm:pb-2">
           <div
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}

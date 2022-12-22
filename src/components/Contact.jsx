@@ -19,6 +19,8 @@ import {
   useTransform,
 } from 'framer-motion'
 
+import sjelesorgere from '../../assets/sjelesorgere'
+
 function FacebookIcon(props) {
   return (
     <svg aria-hidden="true" viewBox="0 0 320 512" {...props}>
@@ -36,8 +38,8 @@ export function Contact() {
 
   return (
     <section
-      id="contact"
-      aria-labelledby="contact-title"
+      id="kontakt"
+      aria-labelledby="kontakt-title"
       className="relative pt-16 pb-3 scroll-mt-14 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
     >
       <div className="absolute inset-x-0 bottom-0 top-1/2 text-stone-900/10 [mask-image:linear-gradient(transparent,white)]">
@@ -48,7 +50,7 @@ export function Contact() {
           <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-stone-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
             <Image
               className="absolute inset-0 object-cover w-full h-full"
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/f_auto,q_auto/Sjelesorg%20i%20Asker/%C3%98stenstad_kirke_eydpot.jpg"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1671638480/Sjelesorg%20i%20Asker/Hilde_Totland_Harket_Ostenstad6_-_tak_web_qpqfsn.jpg"
               alt="Østenstad kirke"
               fill
               sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
@@ -108,8 +110,8 @@ export function Contact() {
                   />
                   <TextField
                     label="Telefon"
-                    id="telehon"
-                    name="telehon"
+                    id="telefon"
+                    name="telefon"
                     type="tel"
                     autoComplete="tel"
                     required
@@ -193,10 +195,9 @@ export function Contact() {
                     name="referral_source"
                   >
                     <option>Uspesifisert</option>
-                    <option>Navn 1</option>
-                    <option>Navn 2</option>
-                    <option>Navn 3</option>
-                    <option>Navn 4</option>
+                    {sjelesorgere.map((person) => (
+                      <option>{person.name}</option>
+                    ))}
                   </SelectField>
                   <div className="col-span-2 pt-2">
                     <div className="flex justify-between">

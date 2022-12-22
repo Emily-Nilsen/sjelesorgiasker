@@ -1,91 +1,29 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
-import duotoneImage from '@/images/screencasts/duotone.svg'
-import gridsImage from '@/images/screencasts/grids.svg'
-import setupImage from '@/images/screencasts/setup.svg'
-import strokesImage from '@/images/screencasts/strokes.svg'
 
-const people = [
-  {
-    name: 'Navn',
-    role: 'Rolle',
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1669825128/Sjelesorg%20i%20Asker/user-duotone_kctggz.svg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Navn',
-    role: 'Rolle',
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1669825128/Sjelesorg%20i%20Asker/user-duotone_kctggz.svg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Navn',
-    role: 'Rolle',
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1669825128/Sjelesorg%20i%20Asker/user-duotone_kctggz.svg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Navn',
-    role: 'Rolle',
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1669825128/Sjelesorg%20i%20Asker/user-duotone_kctggz.svg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Navn',
-    role: 'Rolle',
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1669825128/Sjelesorg%20i%20Asker/user-duotone_kctggz.svg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Navn',
-    role: 'Rolle',
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1669825128/Sjelesorg%20i%20Asker/user-duotone_kctggz.svg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-]
+import slugify from 'slugify'
+import { useRouter } from 'next/router'
 
-function PlayIcon(props) {
-  return (
-    <svg
-      aria-hidden="true"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      viewBox="0 0 16 16"
-      {...props}
-    >
-      <path d="M6.75 10.25v-4.5L10.25 8l-3.5 2.25Z" />
-      <circle cx="8" cy="8" r="6.25" fill="none" />
-    </svg>
-  )
-}
+import sjelesorgere from '../../assets/sjelesorgere'
 
-export function Team() {
+export function Team(props) {
+  const slugify = require('slugify')
+  const { asPath } = useRouter()
+
   return (
     <section
-      id="team"
-      aria-labelledby="team-title"
-      className="py-16 scroll-mt-14 sm:scroll-mt-32 sm:py-20 lg:py-32"
+      id="sjelesørgere"
+      aria-labelledby="sjelesørgere-title"
+      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="2" id="team-title">
+        <SectionHeading number="2" id="sjelesørgere-title">
           Sjelesørgere
         </SectionHeading>
-        <p className="mt-8 text-4xl font-bold tracking-tight font-display text-stone-900">
+        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-stone-900">
           Våre sjelesørgere.
         </p>
         <p className="mt-4 text-lg tracking-tight text-stone-700">
@@ -98,63 +36,31 @@ export function Team() {
           role="list"
           className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
         >
-          {people.map((person) => (
+          {sjelesorgere.map((person) => (
             <li key={person.name}>
-              <div className="space-y-4">
-                <div className="aspect-w-3 aspect-h-2">
-                  <Image
-                    className="object-cover rounded-lg shadow-lg bg-yellow-300/50"
-                    src={person.imageUrl}
-                    alt={person.name}
-                    fill
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3>{person.name}</h3>
-                    <p className="text-fuchsia-600">{person.role}</p>
+              <Link passHref href={`/sjelesorgere/${slugify(person.name)}`}>
+                <div className="space-y-4">
+                  <div className="aspect-w-3 aspect-h-2">
+                    <Image
+                      className="rounded-lg bg-fuchsia-200/50 object-cover shadow-lg"
+                      src={person.image}
+                      alt={person.name}
+                      fill
+                    />
                   </div>
-                  {/* <ul role="list" className="flex space-x-5">
-                    <li>
-                      <a
-                        href={person.twitterUrl}
-                        className="text-gray-400 hover:text-gray-500"
-                      >
-                        <span className="sr-only">Twitter</span>
-                        <svg
-                          className="w-5 h-5"
-                          aria-hidden="true"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href={person.linkedinUrl}
-                        className="text-gray-400 hover:text-gray-500"
-                      >
-                        <span className="sr-only">LinkedIn</span>
-                        <svg
-                          className="w-5 h-5"
-                          aria-hidden="true"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                  </ul> */}
+
+                  <div className="space-y-2">
+                    <div className="space-y-1 text-lg font-medium leading-6">
+                      <h3>{person.name}</h3>
+
+                      <p className="pb-3 text-fuchsia-600">{person.role}</p>
+                      <p className="mt-3 w-fit rounded-full border border-stone-300 px-4 py-1 text-sm text-stone-500 transition duration-300 ease-in-out hover:bg-stone-50 hover:text-stone-900">
+                        Les profil
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </li>
           ))}
         </ul>

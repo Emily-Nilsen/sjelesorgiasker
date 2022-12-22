@@ -31,12 +31,12 @@ const tableOfContents = {
 export function RecreationWeek() {
   return (
     <section
-      id="recreation-week"
-      aria-labelledby="recreation-week-title"
+      id="rekreasjonsuke"
+      aria-labelledby="rekreasjonsuke-title"
       className="py-16 scroll-mt-14 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="4" id="recreation-week-title">
+        <SectionHeading number="4" id="rekreasjonsuke-title">
           Rekreasjonsuke
         </SectionHeading>
         <p className="mt-8 text-4xl font-bold tracking-tight font-display text-stone-900">

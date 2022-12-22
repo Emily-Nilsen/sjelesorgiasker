@@ -4,15 +4,15 @@ import { Popover } from '@headlessui/react'
 import clsx from 'clsx'
 
 const sections = [
-  { id: 'posts', title: 'Innlegg' },
-  { id: 'team', title: 'Sjelesørgere' },
-  { id: 'peace-of-mind', title: 'Sjelefred' },
+  { id: 'innlegg', title: 'Innlegg' },
+  { id: 'sjelesørgere', title: 'Sjelesørgere' },
+  { id: 'sjelefred', title: 'Sjelefred' },
   {
-    id: 'recreation-week',
+    id: 'rekreasjonsuke',
     title: 'Rekreasjonsuke',
   },
 
-  { id: 'contact', title: 'Ta kontakt' },
+  { id: 'kontakt', title: 'Ta kontakt' },
 ]
 
 function MenuIcon({ open, ...props }) {

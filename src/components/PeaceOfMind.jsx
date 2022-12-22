@@ -15,10 +15,9 @@ const resources = [
       return (
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1669835439/Sjelesorg%20i%20Asker/sjelefred01_xh7ba4.jpg"
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_north,h_502,w_1000/v1671638464/Sjelesorg%20i%20Asker/Hilde_Totland_Harket_Ostenstad3_-_orgelstemmer_ldtkcq.jpg"
             alt="Sjelefred i Asker kirke"
-            width={1024}
-            height={1009}
+            fill
             unoptimized
           />
         </div>
@@ -34,12 +33,9 @@ const resources = [
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
             className="relative"
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1669835386/Sjelesorg%20i%20Asker/AdobeStock_78726353_zk2rwl.jpg"
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/c_crop,g_north,h_951,w_1181,y_0/v1671638462/Sjelesorg%20i%20Asker/Hilde_Harket_Ostenstad_lys_pjk5yi.jpg"
             alt="Sjelefred i Asker kirke"
             fill
-            objectFit="cover"
-            // width={5260}
-            // height={3648}
             unoptimized
           />
         </div>
@@ -55,11 +51,8 @@ const resources = [
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="relative object-cover w-full h-full">
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1669835440/Sjelesorg%20i%20Asker/sjelefred02_rulvvv.jpg"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/f_auto,q_auto/Sjelesorg%20i%20Asker/Hilde_Harket_Ostenstad9_-_vinduslys_sq04am.jpg"
               alt="Sjelefred i Asker kirke"
-              // width={1600}
-              // height={895}
-              objectFit="cover"
               fill
               unoptimized
             />
@@ -73,12 +66,12 @@ const resources = [
 export function PeaceOfMind() {
   return (
     <section
-      id="peace-of-mind"
-      aria-labelledby="peace-of-mind-title"
+      id="sjelefred"
+      aria-labelledby="sjelefred-title"
       className="py-16 scroll-mt-14 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="3" id="peace-of-mind-title">
+        <SectionHeading number="3" id="sjelefred-title">
           Sjelefred
         </SectionHeading>
         <p className="mt-8 text-4xl font-bold tracking-tight font-display text-slate-900">

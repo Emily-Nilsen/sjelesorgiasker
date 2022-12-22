@@ -47,8 +47,8 @@ function formatDate(dateString) {
 export function Posts() {
   return (
     <section
-      id="posts"
-      aria-labelledby="posts-title"
+      id="innlegg"
+      aria-labelledby="innlegg-title"
       aria-label="Innlegg"
       className="py-16 scroll-mt-14 sm:scroll-mt-32 sm:py-20 lg:py-32"
       // className="pt-20 pb-16 sm:pb-20 md:pt-36 lg:py-32"
