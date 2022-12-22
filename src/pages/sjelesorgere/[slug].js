@@ -90,7 +90,7 @@ const Person = ({ person }) => {
             <div className="mt-6 space-y-6 text-stone-600">
               <ul role="list" className="flex flex-col space-y-5">
                 {person.profile.map((description) => (
-                  <li>{description}</li>
+                  <li key={person.name}>{description}</li>
                 ))}
               </ul>
             </div>

@@ -196,7 +196,7 @@ export function Contact() {
                   >
                     <option>Uspesifisert</option>
                     {sjelesorgere.map((person) => (
-                      <option>{person.name}</option>
+                      <option key={person.name}>{person.name}</option>
                     ))}
                   </SelectField>
                   <div className="col-span-2 pt-2">
