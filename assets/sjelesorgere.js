@@ -10,7 +10,7 @@ const sjelesorgere = [
       'Jeg har særlig erfaring med samtaler om sorg av mange slag, samlivsbrudd og konflikter i nære relasjoner. Mitt bidrag i en slik samtale kan være å tilføre nye perspektiver på det man har opplevd eller opplever. Noen trenger å forsone seg med livet slik det er, mens andre trenger å oppdage utveier i en fastlåst situasjon. Noen trenger en samtalepartner til å sortere tanker og følelser, mens andre trenger hjelp til å ta vanskelige valg. Noen trenger bare omtanke og støtte for å holde seg oppreist gjennom tunge tider.',
     ],
     about:
-      "Jeg har også arbeidet mye med veiledning innenfor arbeidslivet i kirkelig sektor og har en master i praktisk teologi med vekt på ledelse. Les mer om min vei fram til opprettelse av Sjelesorg i Asker <a style='color:#c026d3; font-weight:500; text-decoration:underline;' href='http://google.com'> her</a>.",
+      "Jeg har også arbeidet mye med veiledning innenfor arbeidslivet i kirkelig sektor og har en master i praktisk teologi med vekt på ledelse. Les mer om min vei fram til opprettelse av Sjelesorg i Asker <a target='_blank' rel='noreferrer' style='color:#c026d3; font-weight:500; text-decoration:underline;' href='http://google.com'> her</a>.",
   },
   {
     name: 'Marianne Iversen',
