@@ -54,7 +54,9 @@ export function Footer() {
             />
           </div>
           <div className="w-full pl-2">
-            <h2 className="text-base font-medium text-zinc-900">Kirken.no</h2>
+            <h2 className="text-base font-medium text-zinc-900">
+              Den norske kirke
+            </h2>
           </div>
         </div>
       </div>

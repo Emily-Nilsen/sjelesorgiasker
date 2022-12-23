@@ -40,16 +40,16 @@ export function Contact() {
     <section
       id="kontakt"
       aria-labelledby="kontakt-title"
-      className="relative pt-16 pb-3 scroll-mt-14 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
+      className="relative scroll-mt-14 pt-16 pb-3 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
     >
       <div className="absolute inset-x-0 bottom-0 top-1/2 text-stone-900/10 [mask-image:linear-gradient(transparent,white)]">
         <GridPattern x="50%" y="100%" />
       </div>
-      <div className="relative max-w-5xl pt-16 mx-auto sm:px-6">
-        <div className="pt-px bg-stone-50 sm:rounded-6xl">
+      <div className="relative mx-auto max-w-5xl pt-16 sm:px-6">
+        <div className="bg-stone-50 pt-px sm:rounded-6xl">
           <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-stone-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
             <Image
-              className="absolute inset-0 object-cover w-full h-full"
+              className="absolute inset-0 h-full w-full object-cover"
               src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1671638480/Sjelesorg%20i%20Asker/Hilde_Totland_Harket_Ostenstad6_-_tak_web_qpqfsn.jpg"
               alt="Østenstad kirke"
               fill
@@ -64,7 +64,7 @@ export function Contact() {
             <SectionHeading number="5" id="contact-title">
               Ta kontakt
             </SectionHeading>
-            <p className="mt-8 text-5xl font-extrabold tracking-tight font-display text-stone-900 sm:text-6xl">
+            <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-stone-900 sm:text-6xl">
               <span className="block text-fuchsia-600">Ta kontakt –</span> Vi
               vil høre fra deg.
             </p>
@@ -203,7 +203,7 @@ export function Contact() {
                     <div className="flex justify-between">
                       <label
                         htmlFor="form-message"
-                        className="block mb-2 text-sm font-semibold text-stone-900"
+                        className="mb-2 block text-sm font-semibold text-stone-900"
                       >
                         Hva ønsker du å arbeide med i samtalene? (Ikke skriv
                         sensitiv informasjon)
@@ -234,13 +234,13 @@ export function Contact() {
                 <fieldset className="mt-6">
                   <div className="space-y-4">
                     <div className="relative flex items-start">
-                      <div className="flex items-center h-5">
+                      <div className="flex h-5 items-center">
                         <input
                           id="samtykke"
                           name="samtykke"
                           type="checkbox"
                           required
-                          className="w-4 h-4 rounded border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
+                          className="h-4 w-4 rounded border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
                         />
                       </div>
                       <div className="ml-3 text-sm">
@@ -293,7 +293,7 @@ export function Contact() {
                   <Button
                     type="submit"
                     color="fuchsia"
-                    className="justify-end px-10 mt-8 w-fit"
+                    className="mt-8 w-fit justify-end px-10"
                   >
                     Send inn
                   </Button>
@@ -307,7 +307,7 @@ export function Contact() {
                 href="https://www.facebook.com/%C3%98stenstad-kirke-2273108242925774"
                 className="inline-flex items-center text-base font-medium tracking-tight text-fuchsia-600"
               >
-                <FacebookIcon className="w-10 h-10 fill-current" />
+                <FacebookIcon className="h-10 w-10 fill-current" />
                 <span className="ml-4">Følg oss på Facebook</span>
               </Link>
             </p>

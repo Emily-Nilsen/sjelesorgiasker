@@ -30,11 +30,17 @@ export const getStaticPaths = async () => {
 
 sjelesorgere.map((person) => ({}))
 
+// return (
+//   {sjelesorgere.map((person) => (
+//            <div dangerouslySetInnerHTML={{ __html: person.about }} key={person.name} />
+//          ))}
+// )
+
 const Person = ({ person }) => {
   const router = useRouter()
 
   return (
-    <div className="relative py-16 bg-stone-50 sm:py-24">
+    <div className="relative py-16 bg-white sm:py-24">
       <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
         <div className="relative sm:py-16 lg:py-0">
           <div
@@ -93,6 +99,14 @@ const Person = ({ person }) => {
                   <li key={person.name}>{description}</li>
                 ))}
               </ul>
+              <p>
+                {person.about ? (
+                  <div
+                    dangerouslySetInnerHTML={{ __html: person.about }}
+                    key={person.name}
+                  />
+                ) : null}
+              </p>
             </div>
           </div>
 
