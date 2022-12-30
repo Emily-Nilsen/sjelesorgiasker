@@ -36,8 +36,8 @@ export function Invitation() {
                 <li key={item.month} className="flex justify-between py-6">
                   <p className="col-span-1">{item.month}</p>
                   <ul role="list" className="col-span-1 font-semibold">
-                    {item.date.map((day) => (
-                      <p>{day}.</p>
+                    {item.date.map((day, i) => (
+                      <p key={i}>{day}.</p>
                     ))}
                   </ul>
                 </li>
