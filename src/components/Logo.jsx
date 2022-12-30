@@ -68,12 +68,7 @@ export function Logo({ height, width }) {
             />
           </g>
           {/* Logo except for cross */}
-          <motion.g
-            variants={container}
-            initial="hidden"
-            animate="show"
-            // className="opacity-50"
-          >
+          <motion.g variants={container} initial="hidden" animate="show">
             <motion.path
               variants={item}
               fill="#facc15"
@@ -324,12 +319,7 @@ export function Logo({ height, width }) {
             />
           </motion.g>
           {/* Sjelesorg i Asker text */}
-          <motion.g
-            variants={textContainer}
-            initial="hidden"
-            animate="show"
-            className="opacity-100"
-          >
+          <motion.g variants={textContainer} initial="hidden" animate="show">
             <motion.path
               variants={letter}
               fill="#fff"

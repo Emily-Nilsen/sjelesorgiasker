@@ -20,8 +20,15 @@ export function Introduction() {
           egestas tellus sagittis ridiculus est aptent placerat tempus posuere.
         </p>
         <p className="mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, quisque
-          pulvinar per.
+          Jeg tok mye av min utdanning i sjelesorg ved Modum Bad. Der er det en
+          liten kirke som heter Olavskirken, og i den kirken finnes en
+          installasjon; et tre laget av finmasket netting og ståltråd. Treet har
+          røtter, stamme og mange grener med kvister. Til kvistene kan man feste
+          glasskår som symboliserer det livet som er gått i stykker. Når man
+          fester glasskårene på treet, er det et symbol på håp. Treet er et{' '}
+          <span className="italic font-medium">håpstre</span> som gir hjelp til
+          å holde fast troen på at vi er sett av Gud og at Gud har omsorg for
+          oss.
         </p>
 
         <p className="mt-10">

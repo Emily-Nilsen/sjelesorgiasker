@@ -34,32 +34,34 @@ export default function Home() {
       <ImageSubSection />
       <Posts />
       <Quote
-        id="Quote-from-gerardo-stark"
+        id="Quote-from-oscar-braadlie"
         author={{
-          name: 'Forfatternavn',
-          role: 'Sitatkilde',
+          name: 'Oscar Braadlie',
+          role: 'Sykehusprest (pensjonist)',
           image:
             'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/therapy_01_cvjhwa.jpg',
         }}
       >
         <p>
-          “Id dictum dis interdum molestie praesent integer sed, pharetra ligula
-          duis per mus aenean nisl.”
+          “Den som ber om samtaler er selv eksperten på eget liv og hvordan det
+          oppleves, og sammen kan vi gå inn i følelser, tanker og spørsmål som
+          har med ens liv å gjøre.”
         </p>
       </Quote>
       <Team />
       <Quote
-        id="Quote-from-tommy-stroman"
+        id="Quote-from-trond-arne-hauge"
         author={{
-          name: 'Forfatternavn',
-          role: 'Sitatkilde',
+          name: 'Trond Arne Hauge',
+          role: 'Prest (pensjonist)',
           image:
-            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/flower_in_crack_ybj3ac.jpg',
+            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/praying_square_j2j5e9.jpg',
         }}
       >
         <p>
-          “Imperdiet quis dapibus eleifend varius euismod est, urna accumsan
-          justo hac sagittis dis pharetra, proin cubilia rutrum ac bibendum.”
+          “Erfaringer fra prestetjenesten er at det kan hjelpe å samtale om det
+          som opptar oss i livene våre. Samtalen kan gi innsikt og forandre
+          livskvaliteten til det bedre.”
         </p>
       </Quote>
       <PeaceOfMind />
@@ -67,22 +69,20 @@ export default function Home() {
       <RecreationWeek />
 
       <Quote
-        id="Quote-from-gerardo-stark"
+        id="Quote-from-astrid-sætrang-morvik"
         author={{
-          name: 'Forfatternavn',
-          role: 'Sitatkilde',
+          name: 'Astrid Sætrang Morvik',
+          role: 'Sokneprest i Østenstad',
           image:
-            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/praying_square_j2j5e9.jpg',
+            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/flower_in_crack_ybj3ac.jpg',
         }}
       >
         <p>
-          “Eget felis varius mus orci, quisque urna habitant himenaeos laoreet
-          mollis fames, natoque sed etiam ultricies massa.”
+          “Noen trenger å forsone seg med livet slik det er, mens andre trenger
+          å oppdage utveier i en fastlåst situasjon. Noen trenger bare omtanke
+          og støtte for å holde seg oppreist gjennom tunge tider.”
         </p>
       </Quote>
-
-      {/* <Pricing /> */}
-      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </>

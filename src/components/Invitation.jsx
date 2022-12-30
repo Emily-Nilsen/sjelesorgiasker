@@ -4,6 +4,13 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Pattern } from '@/components/Pattern'
 
+const items = [
+  { month: 'februar', date: [1, 15] },
+  { month: 'mars', date: [1, 15, 29] },
+  { month: 'april', date: [12, 29] },
+  { month: 'mai', date: [10, 24] },
+]
+
 export function Invitation() {
   return (
     <section
@@ -19,14 +26,25 @@ export function Invitation() {
           <Pattern className="absolute left-0 w-full -top-32 sm:left-3/4 sm:-top-5 sm:ml-8 sm:w-auto md:left-2/3 lg:left-auto lg:right-2 lg:ml-0 xl:right-auto xl:left-2/3" />
           <div>
             <h2 className="text-5xl font-extrabold tracking-tight text-white font-display sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
-              Bli med oss!
+              Sjelefred våren 2023
             </h2>
-            <p className="mt-4 text-lg tracking-tight text-fuchsia-200">
-              Id torquent porta fusce mi nec hendrerit facilisi felis sed
-              mauris, eu bibendum ultricies.
-            </p>
+            <ul
+              role="list"
+              className="w-3/5 mt-10 space-y-2 text-lg tracking-tight divide-y divide-fuchsia-500 text-fuchsia-200"
+            >
+              {items.map((item) => (
+                <li key={item.month} className="flex justify-between py-6">
+                  <p className="col-span-1">{item.month}</p>
+                  <ul role="list" className="col-span-1 font-semibold">
+                    {item.date.map((day) => (
+                      <p>{day}.</p>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
           </div>
-          <form className="opacity-0 lg:pl-16">
+          <form className="opacity-100 lg:pl-16">
             <h3 className="text-base font-medium tracking-tight text-white">
               Get two free chapters straight to your inbox{' '}
               <span aria-hidden="true">&rarr;</span>

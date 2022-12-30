@@ -6,14 +6,16 @@ function Testimonial() {
     <figure className="relative z-10 max-w-md mx-auto text-center lg:mx-0 lg:text-left">
       <blockquote className="mt-2">
         <p className="text-xl font-medium font-display text-stone-900">
-          “I’ve looked at clouds from both sides now.”
+          “Å gi mennesker anledning til å snakke sant om livet og lufte tankene
+          sine, er noe jeg finner svært meningsfullt. Det ønsker jeg å være med
+          å legge til rette for i Asker.”
         </p>
       </blockquote>
       <figcaption className="mt-2 text-sm text-stone-500">
         <strong className="font-semibold text-fuchsia-600 before:content-['—_']">
-          Joni Mitchell
+          Andreas Øksnes
         </strong>
-        , Sanger- og komponist
+        , Sokneprest i Heggedal
       </figcaption>
     </figure>
   )

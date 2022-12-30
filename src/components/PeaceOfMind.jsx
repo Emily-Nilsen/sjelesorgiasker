@@ -2,22 +2,20 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
-import abstractBackgroundImage from '@/images/resources/abstract-background.png'
-import discordImage from '@/images/resources/discord.svg'
-import figmaImage from '@/images/resources/figma.svg'
-import videoPlayerImage from '@/images/resources/video-player.svg'
 
 const resources = [
   {
-    title: 'Tittel 1',
-    description: 'Odio nisi, lectus dis nulla. Tempus quis et.',
-    image: function FigmaImage() {
+    title: 'Piano og sang',
+    description:
+      'Anne Kristine Merkesvik er musikalsk ansvarlig for Sjelefred.',
+    image: function ImageOne() {
       return (
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_north,h_502,w_1000/v1671638464/Sjelesorg%20i%20Asker/Hilde_Totland_Harket_Ostenstad3_-_orgelstemmer_ldtkcq.jpg"
-            alt="Sjelefred i Asker kirke"
-            fill
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_face,h_300,w_480,q_auto,f_auto/Sjelesorg%20i%20Asker/Anne_Kristine_Merkesvik_pianist_nstdry.jpg"
+            alt="Anne Kristine Merkesvik"
+            width={2262}
+            height={1926}
             unoptimized
           />
         </div>
@@ -25,10 +23,9 @@ const resources = [
     },
   },
   {
-    title: 'Tittel 2',
-    description:
-      'Ultrices maecenas vitae rutrum dolor ultricies donec risus sodales. Tempus quis et.',
-    image: function VideoPlayerImage() {
+    title: 'Kveldssamling',
+    description: 'Samlingene starter kl. 20.30 og varer til ca. 21.15.',
+    image: function ImageTwo() {
       return (
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
@@ -43,10 +40,10 @@ const resources = [
     },
   },
   {
-    title: 'Tittel 3',
+    title: 'Musikk og forbønn',
     description:
       'Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum dolor ultricies donec risus sodales.',
-    image: function DiscordImage() {
+    image: function ImageThree() {
       return (
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="relative object-cover w-full h-full">
@@ -75,12 +72,16 @@ export function PeaceOfMind() {
           Sjelefred
         </SectionHeading>
         <p className="mt-8 text-4xl font-bold tracking-tight font-display text-slate-900">
-          “Sjelefred” er en kveldssamling med musikk og forbønn annenhver
-          onsdag.
+          “Sjelefred” er en kveldssamling med musikk og forbønn annenhver onsdag
+          i Østenstad kirke.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum dolor
-          ultricies donec risus sodales. Tempus quis et.
+          I tillegg til tilbud om samtale, vil Sjelesorg i Asker tilby
+          regelmessige samlinger der du kan oppleve ro og fred til sjel og sinn.
+          Samlingene vil inneholde vakker musikk og sang, meditative
+          betraktninger, enkle bønner å bli med i og tilbud om forbønn.
+          Samlingene starter kl. 20.30 og varer til ca. 21.15. Ansvarlig er Anne
+          Kristine Merkesvik (piano og sang) og Astrid Sætrang Morvik.
         </p>
       </Container>
       <Container size="lg" className="mt-16">

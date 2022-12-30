@@ -1,7 +1,7 @@
 const sjelesorgere = [
   {
     name: 'Astrid Sætrang Morvik',
-    role: 'Sokneprest med master i klinisk sjelesorg',
+    role: 'Sokneprest i Østenstad',
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_face,h_585,w_975,x_0/v1671638445/Sjelesorg%20i%20Asker/Bilde_av_Astrid_S%C3%A6trang_Morvik_pkiopj.png',
     profile: [
@@ -31,7 +31,7 @@ const sjelesorgere = [
   },
   {
     name: 'Oscar Braadlie',
-    role: 'Sykehus- og institusjonsprest',
+    role: 'Sykehusprest (pensjonist)',
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_face,h_323,w_480/v1671638321/Sjelesorg%20i%20Asker/Bilde_Oscar_Braadlie_e0wtff.jpg',
     profile: [
@@ -43,16 +43,22 @@ const sjelesorgere = [
   },
   {
     name: 'Trond Arne Hauge',
-    role: 'Rolle',
+    role: 'Prest (pensjonist)',
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_face,h_252,w_295/v1671638360/Sjelesorg%20i%20Asker/Bilde_Trond_Arne_Hauge_glywed.png',
-    profile: ['', '', ''],
+    profile: [
+      'I 40 år har jeg arbeidet som prest. Fra 1980 til 1989 i Øksnes i Vesterålen, en fiskerikommune, og i Holmen i Asker, fra 1989 til 2020. Jeg ble pensjonist fra 2020. Jeg har videreutdanning med spesialkompetanse i praktisk prestetjeneste innenfor sjelesorg, veiledning og ledelse, studieopphold i USA, Fuller, Los Angels, med temaer om kirkevekst, ulike virkelighetssyn og hvordan kommunisere kristentro inn i vår tid.',
+      'Erfaringer fra prestetjenesten er at det kan hjelpe å samtale om det som opptar oss i livene våre. Samtalen kan gi innsikt og forandre livskvaliteten til det bedre.',
+      'Jeg har gjennom årene hatt mange ulike samtaler knyttet til død, gravferd, sykdom, relasjonsbrudd, vanskeligheter i forhold til kommunikasjon med andre, drømmer som ikke gikk i oppfyllelse, et liv som ble annerledes enn det en hadde tenkt og om hverdagens små og store problemer.',
+      'Som pensjonist vil jeg være tilgjengelig for sjelesorg. Jeg tror at alle trenger å bli sett, bli bekreftet og oppmuntret til å ta gode valg til det en selv måtte komme fram til er gode valg. Det kan handle om å komme seg videre fra viktige avgjørelser vi kan ha tatt for tidlig i livet, om hvem vi er i forhold til oss selv eller andre, om følelser av skam og skyld, og om utilstrekkelighet og håpløshet.',
+      'Sammen i samtalen er det mulig å se på følelser og tanker som ikke hjelper oss til å forholde oss til livet på best mulig måte her og nå. Kanskje finnes det alternativer? Hvordan vil du ha det annerledes enn det du føler og tenker nå? Gjennom slike spørsmål ønsker jeg å bidra til å gi ny retning til livet for dem som søker sjelesorg.',
+    ],
   },
   {
     name: 'Andreas Øksnes',
-    role: 'Feltprest',
+    role: 'Sokneprest i Heggedal',
     image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1669825128/Sjelesorg%20i%20Asker/user-duotone_kctggz.svg',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Sjelesorg%20i%20Asker/Andreas_%C3%98ksnes_eqback.jpg',
     profile: [
       'Jeg er prest i Den norske kirke og har jobbet som feltprest i Forsvaret siden 2015. Fra vinteren 2023 er jeg sokneprest i Heggedal menighet.',
       'Som feltprest har jeg vært samtalepartner for både ansatte og vernepliktige soldater. Samtalene er preget av livskriser, savn, mangel på mestring, familierelasjoner, kjærlighetsrelasjoner, tro og tvil - helt vanlige bekymringer og utfordringer. Dette er en stor del av jobben min, og årlig har jeg hatt ca. 300 slike samtaler.',
