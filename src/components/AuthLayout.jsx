@@ -1,9 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-// import { Logo } from '@/components/Logo'
-// import logoEmilyNilsen from '@/images/logos/emily_favicon.svg'
-
 function BackgroundIllustration(props) {
   return (
     <svg
@@ -23,8 +20,8 @@ function BackgroundIllustration(props) {
 
 export function AuthLayout({ title, subtitle, children }) {
   return (
-    <main className="flex min-h-full pt-0 overflow-hidden sm:py-16">
-      <div className="flex flex-col w-full max-w-2xl px-0 mx-left sm:px-0">
+    <main className="flex min-h-full overflow-hidden pt-0 sm:py-16">
+      <div className="mx-left flex w-full max-w-2xl flex-col px-0 sm:px-0">
         <Link href="/" aria-label="Home">
           <div className="flex"></div>
         </Link>
@@ -34,16 +31,16 @@ export function AuthLayout({ title, subtitle, children }) {
             height="1090"
             className="absolute -top-7 left-1/2 -z-10 h-[788px] -translate-x-1/2 stroke-fuchsia-200/30 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:-top-9 sm:h-auto"
           />
-          <h1 className="text-4xl font-extrabold tracking-tight text-center text-stone-900">
+          <h1 className="text-center text-4xl font-extrabold tracking-tight text-stone-900">
             {title}
           </h1>
           {subtitle && (
-            <p className="mt-3 text-lg text-center text-stone-600">
+            <p className="mt-3 text-center text-lg text-stone-600">
               {subtitle}
             </p>
           )}
         </div>
-        <div className="flex-auto px-4 py-10 mt-10 -mx-4 shadow-none bg-t shadow-stone-900/10 sm:mx-0 sm:flex-none sm:rounded-none sm:p-1">
+        <div className="shadow-none bg-t -mx-4 mt-10 flex-auto px-4 py-10 shadow-stone-900/10 sm:mx-0 sm:flex-none sm:rounded-none sm:p-1">
           {children}
         </div>
       </div>

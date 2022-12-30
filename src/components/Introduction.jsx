@@ -26,9 +26,20 @@ export function Introduction() {
           røtter, stamme og mange grener med kvister. Til kvistene kan man feste
           glasskår som symboliserer det livet som er gått i stykker. Når man
           fester glasskårene på treet, er det et symbol på håp. Treet er et{' '}
-          <span className="italic font-medium">håpstre</span> som gir hjelp til
-          å holde fast troen på at vi er sett av Gud og at Gud har omsorg for
-          oss.
+          <span className="italic font-semibold">håpstre</span> som gir hjelp
+          til å holde fast troen på at vi er sett av Gud og at Gud har omsorg
+          for oss.
+        </p>
+
+        <p className="mt-4">
+          Vår logo er designet av Emily Nilsen. Vi ønsket oss en logo som er
+          jordnær og som viser at sjelesorg gir hjelp til vekst. Så tegnet hun
+          treet. Animasjonen du ser når du åpner siden, viser at treet har en
+          stamme som likner et kors. Korset er symbolet på lidelsen som førte
+          til forløsning, liv og oppstandelse for alle. Den kristne troen er
+          bærebjelken for sjelesørgerne. Den hjelper oss til å tro at fremtiden
+          er i Guds hender selv om fortiden og nåtiden er vanskelig. Derfor
+          vokser greiner og kvister med blader ut av treet slik vår logo viser.
         </p>
 
         <p className="mt-10">
@@ -36,7 +47,7 @@ export function Introduction() {
             href="#contact"
             className="text-base font-medium text-fuchsia-600 hover:text-fuchsia-800"
           >
-            Ta kontakt med oss! <span aria-hidden="true">&rarr;</span>
+            Snakk med oss! <span aria-hidden="true">&rarr;</span>
           </Link>
         </p>
       </Container>

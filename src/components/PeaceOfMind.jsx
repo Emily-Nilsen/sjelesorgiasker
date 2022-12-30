@@ -24,7 +24,7 @@ const resources = [
   },
   {
     title: 'Kveldssamling',
-    description: 'Samlingene starter kl. 20.30 og varer til ca. 21.15.',
+    description: 'Samlingene starter kl. 20.30 og varer til ca. kl. 21.15.',
     image: function ImageTwo() {
       return (
         <div className="absolute inset-0 flex items-center justify-center">
@@ -80,8 +80,8 @@ export function PeaceOfMind() {
           regelmessige samlinger der du kan oppleve ro og fred til sjel og sinn.
           Samlingene vil inneholde vakker musikk og sang, meditative
           betraktninger, enkle bønner å bli med i og tilbud om forbønn.
-          Samlingene starter kl. 20.30 og varer til ca. 21.15. Ansvarlig er Anne
-          Kristine Merkesvik (piano og sang) og Astrid Sætrang Morvik.
+          Samlingene starter kl. 20.30 og varer til ca. kl. 21.15. Ansvarlig er
+          Anne Kristine Merkesvik (piano og sang) og Astrid Sætrang Morvik.
         </p>
       </Container>
       <Container size="lg" className="mt-16">

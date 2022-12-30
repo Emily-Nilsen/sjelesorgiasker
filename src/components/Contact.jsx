@@ -5,7 +5,7 @@ import { Switch } from '@headlessui/react'
 
 import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
-import { SelectField, TextField } from '@/components/Fields'
+import { RadioField, SelectField, TextField } from '@/components/Fields'
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
 import authorImage from '@/images/avatars/author.png'
@@ -40,16 +40,16 @@ export function Contact() {
     <section
       id="kontakt"
       aria-labelledby="kontakt-title"
-      className="relative scroll-mt-14 pt-16 pb-3 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
+      className="relative pt-16 pb-3 scroll-mt-14 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
     >
       <div className="absolute inset-x-0 bottom-0 top-1/2 text-stone-900/10 [mask-image:linear-gradient(transparent,white)]">
         <GridPattern x="50%" y="100%" />
       </div>
-      <div className="relative mx-auto max-w-5xl pt-16 sm:px-6">
-        <div className="bg-stone-50 pt-px sm:rounded-6xl">
+      <div className="relative max-w-5xl pt-16 mx-auto sm:px-6">
+        <div className="pt-px bg-stone-50 sm:rounded-6xl">
           <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-stone-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
             <Image
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 object-cover w-full h-full"
               src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1671638480/Sjelesorg%20i%20Asker/Hilde_Totland_Harket_Ostenstad6_-_tak_web_qpqfsn.jpg"
               alt="Østenstad kirke"
               fill
@@ -64,7 +64,7 @@ export function Contact() {
             <SectionHeading number="5" id="contact-title">
               Ta kontakt
             </SectionHeading>
-            <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-stone-900 sm:text-6xl">
+            <p className="mt-8 text-5xl font-extrabold tracking-tight font-display text-stone-900 sm:text-6xl">
               <span className="block text-fuchsia-600">Ta kontakt –</span> Vi
               vil høre fra deg.
             </p>
@@ -91,7 +91,6 @@ export function Contact() {
                 />
                 <div className="grid grid-cols-2 gap-6">
                   <TextField
-                    // className="col-span-full"
                     label="Fornavn"
                     id="first_name"
                     name="first_name"
@@ -100,7 +99,6 @@ export function Contact() {
                     required
                   />
                   <TextField
-                    // className="col-span-full"
                     label="Etternavn"
                     id="last_name"
                     name="last_name"
@@ -117,7 +115,6 @@ export function Contact() {
                     required
                   />
                   <TextField
-                    // className="col-span-full"
                     label="E-post"
                     id="email"
                     name="email"
@@ -125,85 +122,52 @@ export function Contact() {
                     autoComplete="email"
                     required
                   />
-                  {/* <fieldset className="sm:col-span-2">
-                    <legend className="block text-sm font-medium text-stone-700">
+                  <fieldset className="sm:col-span-2">
+                    <legend className="block text-sm font-semibold text-stone-900">
                       Ønsker du en bestemt sjelesørger?
                     </legend>
                     <div className="grid grid-cols-1 mt-4 gap-y-4">
                       <div className="flex items-center">
                         <input
-                          id="sjelesørger-navn-1"
+                          id="uspesifisert"
                           name="sjelesørger"
-                          defaultValue="navn-1"
+                          defaultValue="uspesifisert"
+                          checked="checked"
                           type="radio"
                           className="w-4 h-4 border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
                         />
-                        <label htmlFor="sjelesørger-navn-1" className="ml-3">
+                        <label
+                          htmlFor="sjelesørger-uspesifisert"
+                          className="ml-3"
+                        >
                           <span className="block text-sm text-stone-700">
-                            Navn 1
+                            Uspesifisert
                           </span>
                         </label>
                       </div>
-                      <div className="flex items-center">
-                        <input
-                          id="sjelesørger-navn-2"
-                          name="sjelesørger"
-                          defaultValue="navn-2"
-                          type="radio"
-                          className="w-4 h-4 border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
-                        />
-                        <label htmlFor="sjelesørger-navn-2" className="ml-3">
-                          <span className="block text-sm text-stone-700">
-                            Navn 2
-                          </span>
-                        </label>
-                      </div>
-                      <div className="flex items-center">
-                        <input
-                          id="sjelesørger-navn-3"
-                          name="sjelesørger"
-                          defaultValue="navn-3"
-                          type="radio"
-                          className="w-4 h-4 border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
-                        />
-                        <label htmlFor="sjelesørger-navn-3" className="ml-3">
-                          <span className="block text-sm text-stone-700">
-                            Navn 3
-                          </span>
-                        </label>
-                      </div>
-                      <div className="flex items-center">
-                        <input
-                          id="sjelesørger-navn-4"
-                          name="sjelesørger"
-                          defaultValue="navn-4"
-                          type="radio"
-                          className="w-4 h-4 border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
-                        />
-                        <label htmlFor="sjelesørger-navn-4" className="ml-3">
-                          <span className="block text-sm text-stone-700">
-                            Navn 4
-                          </span>
-                        </label>
-                      </div>
+                      {sjelesorgere.map((person, i) => (
+                        <div key={i} className="flex items-center">
+                          <input
+                            id={person.name}
+                            name="sjelesørger"
+                            type="radio"
+                            className="w-4 h-4 border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
+                          />
+                          <label htmlFor={person.name} className="ml-3">
+                            <span className="block text-sm text-stone-700">
+                              {person.name}
+                            </span>
+                          </label>
+                        </div>
+                      ))}
                     </div>
-                  </fieldset> */}
-                  <SelectField
-                    // className="col-span-full"
-                    label="Ønsker du en bestemt sjelesørger?"
-                    id="referral-source"
-                    name="referral_source"
-                  >
-                    <option>Uspesifisert</option>
-                    {sjelesorgere.map((person) => (
-                      <option key={person.name}>{person.name}</option>
-                    ))}
-                  </SelectField>
+                  </fieldset>
+
                   <div className="col-span-2 pt-2">
                     <div className="flex justify-between">
                       <label
                         htmlFor="form-message"
-                        className="mb-2 block text-sm font-semibold text-stone-900"
+                        className="block mb-2 text-sm font-semibold text-stone-900"
                       >
                         Hva ønsker du å arbeide med i samtalene? (Ikke skriv
                         sensitiv informasjon)
@@ -232,18 +196,18 @@ export function Contact() {
                 {/* Agree */}
 
                 <fieldset className="mt-6">
-                  <div className="space-y-4">
+                  <div className="space-y-8">
                     <div className="relative flex items-start">
-                      <div className="flex h-5 items-center">
+                      <div className="flex items-center h-5">
                         <input
                           id="samtykke"
                           name="samtykke"
                           type="checkbox"
                           required
-                          className="h-4 w-4 rounded border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
+                          className="w-4 h-4 rounded border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
                         />
                       </div>
-                      <div className="ml-3 text-sm">
+                      <div className="ml-3 -mt-1 text-sm ">
                         <label
                           htmlFor="samtykke"
                           className="font-medium tracking-normal text-stone-600"
@@ -258,42 +222,11 @@ export function Contact() {
                   </div>
                 </fieldset>
 
-                {/* <div className="my-6 sm:col-span-2">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 p-1">
-                      <Switch
-                        checked={agreed}
-                        onChange={setAgreed}
-                        className={classNames(
-                          agreed ? 'bg-fuchsia-600' : 'bg-stone-200',
-                          'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2'
-                        )}
-                      >
-                        <span className="sr-only">Samtykkelse</span>
-                        <span
-                          aria-hidden="true"
-                          className={classNames(
-                            agreed ? 'translate-x-5' : 'translate-x-0',
-                            'shadow inline-block h-5 w-5 transform rounded-full bg-white ring-0 transition duration-200 ease-in-out'
-                          )}
-                        />
-                      </Switch>
-                    </div>
-                    <div className="ml-3">
-                      <p className="text-base leading-normal text-stone-500">
-                        For å sikre at den sjelesorgen som gis blir best mulig,
-                        samtykker jeg i at min sjelesørger tar imot veiledning i
-                        et lukket forum. Ingen opplysninger vil bli gitt der som
-                        kan identifisere meg.
-                      </p>
-                    </div>
-                  </div>
-                </div> */}
                 <div className="flex justify-end">
                   <Button
                     type="submit"
                     color="fuchsia"
-                    className="mt-8 w-fit justify-end px-10"
+                    className="justify-end px-10 mt-8 w-fit"
                   >
                     Send inn
                   </Button>
@@ -307,7 +240,7 @@ export function Contact() {
                 href="https://www.facebook.com/%C3%98stenstad-kirke-2273108242925774"
                 className="inline-flex items-center text-base font-medium tracking-tight text-fuchsia-600"
               >
-                <FacebookIcon className="h-10 w-10 fill-current" />
+                <FacebookIcon className="w-10 h-10 fill-current" />
                 <span className="ml-4">Følg oss på Facebook</span>
               </Link>
             </p>

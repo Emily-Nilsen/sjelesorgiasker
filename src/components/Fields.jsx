@@ -7,7 +7,7 @@ function Label({ id, children }) {
   return (
     <label
       htmlFor={id}
-      className="block mb-2 text-sm font-semibold text-stone-900"
+      className="mb-2 block text-sm font-semibold text-stone-900"
     >
       {children}
     </label>
@@ -23,7 +23,13 @@ export function TextField({ id, label, type = 'text', className, ...props }) {
   )
 }
 
-export function SelectField({ id, label, className, ...props }) {
+export function SelectField({
+  id,
+  label,
+  type = 'radio',
+  className,
+  ...props
+}) {
   return (
     <div className={className}>
       {label && <Label id={id}>{label}</Label>}
