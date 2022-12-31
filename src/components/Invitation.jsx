@@ -6,11 +6,23 @@ import { Pattern } from '@/components/Pattern'
 
 import { ClockIcon, MapPinIcon } from '@heroicons/react/24/outline'
 
+// const items = [
+//   { month: 'februar', date: [1, 15] },
+//   { month: 'mars', date: [1, 15, 29] },
+//   { month: 'april', date: [12, 29] },
+//   { month: 'mai', date: [10, 24] },
+// ]
+
 const items = [
-  { month: 'februar', date: [1, 15] },
-  { month: 'mars', date: [1, 15, 29] },
-  { month: 'april', date: [12, 29] },
-  { month: 'mai', date: [10, 24] },
+  '1. februar',
+  '15. februar',
+  '1. mars',
+  '15. mars',
+  '29. mars',
+  '12. april',
+  '29. april',
+  '10. mai',
+  '24. mai',
 ]
 
 export function Invitation() {
@@ -32,17 +44,10 @@ export function Invitation() {
             </h2>
             <ul
               role="list"
-              className="w-full mt-10 space-y-2 text-lg tracking-tight divide-y divide-fuchsia-500 text-fuchsia-200 sm:w-3/5"
+              className="w-full mt-10 space-y-2 text-lg tracking-tight text-fuchsia-200"
             >
-              {items.map((item) => (
-                <li key={item.month} className="flex justify-between py-6">
-                  <p className="col-span-1">{item.month}</p>
-                  <ul role="list" className="col-span-1 font-semibold">
-                    {item.date.map((day, i) => (
-                      <p key={i}>{day}.</p>
-                    ))}
-                  </ul>
-                </li>
+              {items.map((item, i) => (
+                <li key={i}>{item}</li>
               ))}
             </ul>
           </div>
