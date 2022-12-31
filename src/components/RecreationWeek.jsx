@@ -1,6 +1,8 @@
 import { Container } from '@/components/Container'
 import { Expandable } from '@/components/Expandable'
 import { SectionHeading } from '@/components/SectionHeading'
+import Image from 'next/image'
+import { CheckIcon } from '@heroicons/react/24/outline'
 
 const tableOfContents = {
   'Dette får du': {
@@ -53,7 +55,7 @@ export function RecreationWeek() {
                         {Object.entries(pages).map(([title]) => (
                           <li
                             key={title}
-                            className="flex justify-between py-3"
+                            className="flex py-3"
                             aria-label={`${title}`}
                           >
                             <span
@@ -68,6 +70,41 @@ export function RecreationWeek() {
                     </li>
                   ))}
               </ol>
+              {isExpanded ? (
+                <div className="mx-auto mt-6 tracking-tight prose prose-lg prose-fuchsia text-stone-700">
+                  <figure className="my-10">
+                    <Image
+                      className="w-full rounded-lg"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Sjelesorg%20i%20Asker/L%C3%B8kenes_g%C3%A5rd_nwgdhf.jpg"
+                      alt="Løkenes gård"
+                      width={1080}
+                      height={551}
+                    />
+                    <figcaption>
+                      Løkenes gård ligger vakkert til på veien ned mot
+                      Konglungen, har strandlinje og kyststi. Foto: Karl Braanes
+                    </figcaption>
+                  </figure>
+                  <p className="mt-12 text-3xl font-bold tracking-tight font-display text-stone-900">
+                    Praktisk info
+                  </p>
+                  <ul role="list">
+                    <li>Pris fastsettes senere </li>
+                    <li>Betaling til bankkonto</li>
+                    <li>
+                      Påmelding innen 1. juni til{' '}
+                      <a target="_blank" href="mailto:am762@kirken.no">
+                        Astrid Sætrang Morvik
+                      </a>
+                    </li>
+                    <li>
+                      Bestillingen er bekreftet når betalingen er kommet inn på
+                      konto
+                    </li>
+                    <li>Programmet for hver dag utarbeides etter hvert</li>
+                  </ul>
+                </div>
+              ) : null}
               <Expandable.Button>Se mer</Expandable.Button>
             </>
           )}
