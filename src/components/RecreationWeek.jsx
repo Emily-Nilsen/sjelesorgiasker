@@ -93,7 +93,11 @@ export function RecreationWeek() {
                     <li>Betaling til bankkonto</li>
                     <li>
                       Påmelding innen 1. juni til{' '}
-                      <a target="_blank" href="mailto:am762@kirken.no">
+                      <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="mailto:am762@kirken.no"
+                      >
                         Astrid Sætrang Morvik
                       </a>
                     </li>
