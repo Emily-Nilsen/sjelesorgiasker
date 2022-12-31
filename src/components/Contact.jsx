@@ -132,7 +132,7 @@ export function Contact() {
                           id="uspesifisert"
                           name="sjelesørger"
                           defaultValue="uspesifisert"
-                          checked="checked"
+                          defaultChecked="checked"
                           type="radio"
                           className="w-4 h-4 border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
                         />
