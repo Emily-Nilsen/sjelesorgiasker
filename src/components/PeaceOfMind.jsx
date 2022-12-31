@@ -42,7 +42,7 @@ const resources = [
   {
     title: 'Musikk og forbønn',
     description:
-      'Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum dolor ultricies donec risus sodales.',
+      'Vakker musikk og sang, meditative betraktninger, enkle bønner og tilbud om forbønn.',
     image: function ImageThree() {
       return (
         <div className="absolute inset-0 flex items-center justify-center">
