@@ -44,7 +44,7 @@ export function Invitation() {
             </h2>
             <ul
               role="list"
-              className="w-full mt-10 space-y-2 text-lg tracking-tight text-fuchsia-200"
+              className="w-full mt-10 space-y-2 text-lg tracking-tight text-fuchsia-100"
             >
               {items.map((item, i) => (
                 <li key={i}>{item}</li>
@@ -62,10 +62,18 @@ export function Invitation() {
                   kl. 20.30-21.15, annenhver onsdag
                 </h3>
               </div>
-              <div className="flex items-center">
-                <MapPinIcon className="w-5 h-5 mr-2 text-fuchsia-300" />
+              <div className="flex items-center group">
+                <MapPinIcon className="w-5 h-5 mr-2 transition text-fuchsia-300 group-hover:text-fuchsia-50" />
                 <h3 className="text-base font-medium tracking-tight text-white">
-                  Østenstad kirke, Asker
+                  <a
+                    className="underline transition group-hover:text-fuchsia-100"
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.google.com/maps/place/%C3%98stenstad+menighet/@59.8126349,10.4595882,17z/data=!3m1!4b1!4m5!3m4!1s0x46411574000c6d5b:0x4358793260a7b359!8m2!3d59.8124251!4d10.4638969"
+                  >
+                    Østenstad kirke
+                  </a>
+                  , Asker{' '}
                 </h3>
               </div>
             </div>
