@@ -12,34 +12,14 @@ export function Introduction() {
     >
       <Container className="text-lg tracking-tight text-stone-700">
         <p className="text-4xl font-bold tracking-tight font-display text-stone-900">
-          Sjelesorgprosjektet ... odio nisi, lectus dis nulla..
+          Sjelesorg i Asker: Et tilbud om samtaler til dem som trenger det
         </p>
         <p className="mt-4">
-          Id torquent porta fusce mi nec hendrerit facilisi felis sed mauris, eu
-          bibendum ultricies cras facilisis gravida nibh ante quisque accumsan,
-          egestas tellus sagittis ridiculus est aptent placerat tempus posuere.
-        </p>
-        <p className="mt-4">
-          Jeg tok mye av min utdanning i sjelesorg ved Modum Bad. Der er det en
-          liten kirke som heter Olavskirken, og i den kirken finnes en
-          installasjon; et tre laget av finmasket netting og ståltråd. Treet har
-          røtter, stamme og mange grener med kvister. Til kvistene kan man feste
-          glasskår som symboliserer det livet som er gått i stykker. Når man
-          fester glasskårene på treet, er det et symbol på håp. Treet er et{' '}
-          <span className="italic font-semibold">håpstre</span> som gir hjelp
-          til å holde fast troen på at vi er sett av Gud og at Gud har omsorg
-          for oss.
-        </p>
-
-        <p className="mt-4">
-          Vår logo er designet av Emily Nilsen. Vi ønsket oss en logo som er
-          jordnær og som viser at sjelesorg gir hjelp til vekst. Så tegnet hun
-          treet. Animasjonen du ser når du åpner siden, viser at treet har en
-          stamme som likner et kors. Korset er symbolet på lidelsen som førte
-          til forløsning, liv og oppstandelse for alle. Den kristne troen er
-          bærebjelken for sjelesørgerne. Den hjelper oss til å tro at fremtiden
-          er i Guds hender selv om fortiden og nåtiden er vanskelig. Derfor
-          vokser greiner og kvister med blader ut av treet slik vår logo viser.
+          Gjennom nettverket «Sjelesorg i Asker» ønsker Den norske kirke i Asker
+          å tilby en kvalifisert samtalepartner til alle som i en periode har
+          behov for denne typen hjelp. Nettverket består av dyktige sjelesørgere
+          som man kan få en avtale med. Vårt mål er at sjelesorg skal være lett
+          tilgjengelig og gratis.
         </p>
 
         <p className="mt-10">

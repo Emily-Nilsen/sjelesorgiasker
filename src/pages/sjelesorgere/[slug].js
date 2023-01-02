@@ -30,26 +30,20 @@ export const getStaticPaths = async () => {
 
 sjelesorgere.map((person) => ({}))
 
-// return (
-//   {sjelesorgere.map((person) => (
-//            <div dangerouslySetInnerHTML={{ __html: person.about }} key={person.name} />
-//          ))}
-// )
-
 const Person = ({ person }) => {
   const router = useRouter()
 
   return (
-    <div className="relative py-16 bg-white sm:py-24">
+    <div className="relative bg-white py-16 sm:py-24">
       <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
         <div className="relative sm:py-16 lg:py-0">
           <div
             aria-hidden="true"
             className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
-            <div className="absolute inset-y-0 w-full opacity-25 right-1/2 rounded-r-3xl bg-fuchsia-200 lg:right-72" />
+            <div className="absolute inset-y-0 right-1/2 w-full rounded-r-3xl bg-fuchsia-200 opacity-25 lg:right-72" />
           </div>
-          <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
+          <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
             {/* Sjelesørge*/}
             <figure>
               <motion.div
@@ -62,7 +56,7 @@ const Person = ({ person }) => {
                 }}
                 className="overflow-hidden rounded-lg lg:aspect-none"
               >
-                <div className="relative object-cover object-center overflow-hidden rounded-lg shadow-xl">
+                <div className="relative overflow-hidden rounded-lg object-cover object-center shadow-xl">
                   <Image
                     src={person.image}
                     alt={person.name}
@@ -73,9 +67,9 @@ const Person = ({ person }) => {
                   />
                 </div>
               </motion.div>
-              <figcaption className="flex items-center mt-3 text-base font-medium text-stone-600">
+              <figcaption className="mt-3 flex items-center text-base font-medium text-stone-600">
                 <CameraIcon
-                  className="flex-none w-5 h-5 text-fuchsia-300"
+                  className="h-5 w-5 flex-none text-fuchsia-300"
                   aria-hidden="true"
                 />
                 <span className="ml-2">{person.name}</span>
@@ -84,10 +78,10 @@ const Person = ({ person }) => {
           </div>
         </div>
 
-        <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
+        <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
-            <h1 className="text-4xl font-extrabold tracking-normal font-display text-stone-800 sm:text-5xl">
+            <h1 className="font-display text-4xl font-extrabold tracking-normal text-stone-800 sm:text-5xl">
               {person.name}
             </h1>
             <h2 className="mt-2 text-lg font-medium text-fuchsia-600">
@@ -115,7 +109,7 @@ const Person = ({ person }) => {
               <Link
                 href="/#sjelesørgere"
                 passHref
-                className="text-base font-medium transition duration-200 ease-in-out text-stone-500 hover:text-stone-800"
+                className="text-base font-medium text-stone-500 transition duration-200 ease-in-out hover:text-stone-800"
               >
                 Tilbake <span aria-hidden="true">&rarr;</span>{' '}
               </Link>

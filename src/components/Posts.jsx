@@ -50,7 +50,7 @@ export function Posts() {
       id="innlegg"
       aria-labelledby="innlegg-title"
       aria-label="Innlegg"
-      className="py-16 scroll-mt-14 sm:scroll-mt-32 sm:py-20 lg:py-32"
+      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
       // className="pt-20 pb-16 sm:pb-20 md:pt-36 lg:py-32"
     >
       <Container className="text-lg tracking-tight text-stone-700">
@@ -58,7 +58,7 @@ export function Posts() {
           Innlegg
         </SectionHeading>
 
-        <p className="mt-8 text-4xl font-bold tracking-tight font-display text-slate-900">
+        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
           “Det går bra med meg. Jeg klarer meg.”
         </p>
 
@@ -77,7 +77,7 @@ export function Posts() {
           snakket oss gjennom det som plager oss. Hadde vi bare hatt noen å
           snakke med.
         </p>
-        <p className="mt-12 text-3xl font-bold tracking-tight font-display text-stone-900">
+        <p className="mt-12 font-display text-3xl font-bold tracking-tight text-stone-900">
           Sjelesorg er samtaler om livet
         </p>
         <p className="mt-4">
@@ -97,7 +97,7 @@ export function Posts() {
           få et annet perspektiv på det som skjer. Sjelesørgeren har trening i å
           se på livet fra flere sider.
         </p>
-        <p className="mt-12 text-3xl font-bold tracking-tight font-display text-stone-900">
+        <p className="mt-12 font-display text-3xl font-bold tracking-tight text-stone-900">
           Ikke terapi, men godt likevel
         </p>
         <p className="mt-4">
@@ -112,7 +112,7 @@ export function Posts() {
           sjelesørger, for med en sjelesørger kan man ta opp andre tema og
           snakke på en annen måte enn med en terapeut.
         </p>
-        <p className="mt-12 text-3xl font-bold tracking-tight font-display text-stone-900">
+        <p className="mt-12 font-display text-3xl font-bold tracking-tight text-stone-900">
           Gode rammer og veiledning
         </p>
         <p className="mt-4">
@@ -128,7 +128,7 @@ export function Posts() {
           taushetsplikten. Det som må fortelles, blir anonymisert slik at ingen
           skal kunne identifiseres.
         </p>
-        <p className="mt-12 text-3xl font-bold tracking-tight font-display text-stone-900">
+        <p className="mt-12 font-display text-3xl font-bold tracking-tight text-stone-900">
           Et rom for samtale, et nettverk av sjelesørgere
         </p>
         <p className="mt-4">

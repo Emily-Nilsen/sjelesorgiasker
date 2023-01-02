@@ -7,8 +7,7 @@ function Testimonial() {
       <blockquote className="mt-2">
         <p className="text-xl font-medium font-display text-stone-900">
           “Å gi mennesker anledning til å snakke sant om livet og lufte tankene
-          sine, er noe jeg finner svært meningsfullt. Det ønsker jeg å være med
-          å legge til rette for i Asker.”
+          sine, er noe jeg finner svært meningsfullt.”
         </p>
       </blockquote>
       <figcaption className="mt-2 text-sm text-stone-500">
@@ -31,7 +30,7 @@ function getSeason() {
 
 export function ImageSubSection() {
   return (
-    <div className="relative h-full border-stone-300/20 lg:border-b">
+    <div className="relative h-full">
       <div aria-hidden="true" className="relative animate-fade-in">
         <Image
           src="https://res.cloudinary.com/dt3k2apqd/image/upload/f_auto,q_auto/Sjelesorg%20i%20Asker/therapy_02_hyjlzb.jpg"

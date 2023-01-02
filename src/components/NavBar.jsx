@@ -4,7 +4,7 @@ import { Popover } from '@headlessui/react'
 import clsx from 'clsx'
 
 const sections = [
-  { id: 'innlegg', title: 'Innlegg' },
+  { id: 'sjelesorg', title: 'Sjelesorg' },
   { id: 'sjelesørgere', title: 'Sjelesørgere' },
   { id: 'sjelefred', title: 'Sjelefred' },
   {

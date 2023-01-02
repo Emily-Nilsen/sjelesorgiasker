@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="relative pt-5 pb-20 sm:pb-32 sm:pt-14">
       <div className="flex flex-col items-center justify-center py-4 sm:flex-row">
         {/* Sjelesorg i Asker */}
-        <div className="flex items-center pb-2">
+        <div className="flex flex-col items-center pb-2 sm:flex-row">
           <div
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}
@@ -28,14 +28,16 @@ export function Footer() {
             <h2 className="text-base font-medium text-zinc-900">
               Sjelesorg i Asker{' '}
               <span className="hidden font-normal text-zinc-600 sm:inline">
-                samarbeider med
+                er et tilbud i regi av
               </span>{' '}
             </h2>
           </div>
         </div>
-        <p className="font-normal text-zinc-600 sm:hidden">samarbeider med</p>
+        <p className="py-2 font-normal text-center text-zinc-600 sm:hidden">
+          er et tilbud i regi av
+        </p>
         {/* Kirken.no */}
-        <div className="flex items-center py-2 pl-2 sm:py-0 sm:pb-2">
+        <div className="flex flex-col items-center py-2 pl-2 sm:flex-row sm:py-0 sm:pb-2">
           <div
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}

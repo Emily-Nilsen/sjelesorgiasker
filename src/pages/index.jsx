@@ -5,11 +5,13 @@ import clsx from 'clsx'
 
 import { Contact } from '@/components/Contact'
 import { Footer } from '@/components/Footer'
+import { HopeTree } from '@/components/HopeTree'
 import { Invitation } from '@/components/Invitation'
 import { Hero } from '@/components/Hero'
 import { ImageSubSection } from '@/components/ImageSubSection'
 import { Introduction } from '@/components/Introduction'
 import { Posts } from '@/components/Posts'
+import { Sjelesorg } from '@/components/Sjelesorg'
 import { NavBar } from '@/components/NavBar'
 import { PeaceOfMind } from '@/components/PeaceOfMind'
 import { Team } from '@/components/Team'
@@ -32,7 +34,8 @@ export default function Home() {
       <Introduction />
       <NavBar />
       <ImageSubSection />
-      <Posts />
+      <Sjelesorg />
+      <HopeTree />
       <Quote
         id="Quote-from-oscar-braadlie"
         author={{
@@ -43,9 +46,8 @@ export default function Home() {
         }}
       >
         <p>
-          “Den som ber om samtaler er selv eksperten på eget liv og hvordan det
-          oppleves, og sammen kan vi gå inn i følelser, tanker og spørsmål som
-          har med ens liv å gjøre.”
+          “Den som ber om samtaler er selv eksperten på eget liv og vet hvordan
+          det oppleves.”
         </p>
       </Quote>
       <Team />
@@ -59,9 +61,7 @@ export default function Home() {
         }}
       >
         <p>
-          “Erfaringer fra prestetjenesten er at det kan hjelpe å samtale om det
-          som opptar oss i livene våre. Samtalen kan gi innsikt og forandre
-          livskvaliteten til det bedre.”
+          “Samtalen kan gi innsikt og forandre livskvaliteten til det bedre.”
         </p>
       </Quote>
       <PeaceOfMind />
@@ -79,10 +79,10 @@ export default function Home() {
       >
         <p>
           “Noen trenger å forsone seg med livet slik det er, mens andre trenger
-          å oppdage utveier i en fastlåst situasjon. Noen trenger bare omtanke
-          og støtte for å holde seg oppreist gjennom tunge tider.”
+          å oppdage utveier i en fastlåst situasjon.”
         </p>
       </Quote>
+
       <Contact />
       <Footer />
     </>

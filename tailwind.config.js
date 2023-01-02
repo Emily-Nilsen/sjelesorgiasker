@@ -26,6 +26,10 @@ module.exports = {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     extend: {
+      transitionProperty: {
+        width: 'width',
+        height: 'height',
+      },
       animation: {
         blob: 'blob 7s infinite',
         'fade-in': 'fade-in 1s ease-in forwards',

@@ -60,9 +60,9 @@ export function Hero() {
                 Sjelesorg i Asker
               </h1>
               <p className="mt-4 text-3xl text-stone-600 lg:text-fuchsia-200">
-                Sorg og kjærlighetssorg, eksistensielle spørsmål og troskriser -
-                det er ingenting som er for stort eller for lite å snakke med en
-                sjelesørger om.
+                Sorg og eksistensielle spørsmål, troskriser eller problemer i
+                nære relasjoner – det er ingenting som er for stort eller for
+                lite til å snakke med en sjelesørger om.
               </p>
               <div className="flex gap-4 mt-8">
                 <Button href="#sjelesørgere" color="fuchsia">

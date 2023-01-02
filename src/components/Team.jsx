@@ -17,18 +17,18 @@ export function Team(props) {
     <section
       id="sjelesørgere"
       aria-labelledby="sjelesørgere-title"
-      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
+      className="py-16 scroll-mt-14 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
         <SectionHeading number="2" id="sjelesørgere-title">
           Sjelesørgere
         </SectionHeading>
-        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-stone-900">
+        <p className="mt-8 text-4xl font-bold tracking-tight font-display text-stone-900">
           Våre sjelesørgere.
         </p>
         <p className="mt-4 text-lg tracking-tight text-stone-700">
-          Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum dolor
-          ultricies donec risus sodales. Tempus quis et.
+          Sjelesorg i Asker setter deg i kontakt med en sjelesørger som passer
+          dine behov. Les om hver enkelt sine kvalifikasjoner og erfaring her.
         </p>
       </Container>
       <Container size="lg" className="mt-16">
@@ -42,7 +42,7 @@ export function Team(props) {
                 <div className="space-y-4">
                   <div className="aspect-w-3 aspect-h-2">
                     <Image
-                      className="rounded-lg bg-fuchsia-200/50 object-cover shadow-lg"
+                      className="object-cover rounded-lg shadow-lg bg-fuchsia-200/50"
                       src={person.image}
                       alt={person.name}
                       fill
@@ -54,7 +54,7 @@ export function Team(props) {
                       <h3>{person.name}</h3>
 
                       <p className="pb-3 text-fuchsia-600">{person.role}</p>
-                      <p className="mt-3 w-fit rounded-full border border-stone-300 px-4 py-1 text-sm text-stone-500 transition duration-300 ease-in-out hover:bg-stone-50 hover:text-stone-900">
+                      <p className="px-4 py-1 mt-3 text-sm transition duration-300 ease-in-out border rounded-full w-fit border-stone-300 text-stone-500 hover:bg-stone-50 hover:text-stone-900">
                         Les profil
                       </p>
                     </div>
