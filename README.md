@@ -1,6 +1,6 @@
 # Sjelesorg i Asker
 
-Sjelesorg i Asker is a landing page for Asker Church's spiritual care project built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org). The site includes articles, a list of spiritual care staff members, an online contact form, and additional contact information.
+Sjelesorg i Asker is a landing page for Asker Church's spiritual care project built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org). The site includes an FAQ section, a list of spiritual care staff members, various arrangements, an online contact form, and individual profile pages.
 
 Here is a link to the [Sjelesorg i Asker](https://sjelesorgiasker.no) website.
 
@@ -12,7 +12,6 @@ The project is created with:
 - Tailwind CSS - version 3.0
 - Headless UI - version 1.6
 - Framer Motion - version 6.3
-- Next Translate - version 1.4
 
 ## Setup
 

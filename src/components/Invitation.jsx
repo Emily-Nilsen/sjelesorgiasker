@@ -6,13 +6,6 @@ import { Pattern } from '@/components/Pattern'
 
 import { ClockIcon, MapPinIcon } from '@heroicons/react/24/outline'
 
-// const items = [
-//   { month: 'februar', date: [1, 15] },
-//   { month: 'mars', date: [1, 15, 29] },
-//   { month: 'april', date: [12, 29] },
-//   { month: 'mai', date: [10, 24] },
-// ]
-
 const items = [
   '1. februar',
   '15. februar',
@@ -20,7 +13,7 @@ const items = [
   '15. mars',
   '29. mars',
   '12. april',
-  '29. april',
+  '26. april',
   '10. mai',
   '24. mai',
 ]

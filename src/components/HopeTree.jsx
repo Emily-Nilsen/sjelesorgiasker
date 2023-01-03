@@ -17,7 +17,7 @@ export function HopeTree() {
             <dl className="mt-10 space-y-10">
               <div>
                 <dt className="text-2xl font-bold tracking-tight font-display text-stone-900 sm:text-3xl">
-                  Håpstreet i Olavskirken
+                  Håpstreet
                 </dt>
                 <dd className="mt-3 text-base text-stone-500">
                   Ved Modum Bad der mange sjelesørgere får sin utdanning, ligger

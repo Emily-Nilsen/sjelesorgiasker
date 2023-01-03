@@ -8,7 +8,6 @@ import { Button } from '@/components/Button'
 import { RadioField, SelectField, TextField } from '@/components/Fields'
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
-import authorImage from '@/images/avatars/author.png'
 
 import {
   motion,

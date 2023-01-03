@@ -17,8 +17,6 @@ import { PeaceOfMind } from '@/components/PeaceOfMind'
 import { Team } from '@/components/Team'
 import { RecreationWeek } from '@/components/RecreationWeek'
 import { Quote } from '@/components/Quote'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
 
 export default function Home() {
   return (
@@ -29,12 +27,31 @@ export default function Home() {
           name="description"
           content="Sorg og kjærlighetssorg, eksistensielle spørsmål og troskriser - det er ingenting som er for stort eller for lite å snakke med en sjelesørger om. "
         />
+        <meta
+          name="keywords"
+          content="Sjelesorg, Samtale,Livskrise, Sorg, Kjærlighetssorg, Konflikter, Relasjoner,Problemer, Forbønn, Skriftemål, Kirke, Håp, Hjelp, Asker,Østenstad kirke, jeg trenger hjelp, trenger hjelp, konflikt, problem"
+        />
       </Head>
       <Hero />
       <Introduction />
       <NavBar />
       <ImageSubSection />
       <Sjelesorg />
+      <Quote
+        id="Quote-from-marianne-m-iversen"
+        author={{
+          name: 'Marianne M Iversen',
+          role: 'Gestaltterapeut',
+          image:
+            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/markus-spiske-CznP38QmCCI-unsplash_dsufgj.jpg',
+        }}
+      >
+        <p>
+          “Det kan gjøre en forskjell å dele tanker og reaksjoner med en man har
+          tillit til og som både tåler og tar imot. Det kan bidra til fotfeste
+          og håp.”
+        </p>
+      </Quote>
       <HopeTree />
       <Quote
         id="Quote-from-oscar-braadlie"

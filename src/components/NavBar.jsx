@@ -95,7 +95,7 @@ export function NavBar() {
                   >
                     {(mobileActiveIndex + 1).toString().padStart(2, '0')}
                   </span>
-                  <span className="ml-4 text-base font-medium text-slate-900">
+                  <span className="ml-4 text-base font-medium text-stone-900">
                     {sections[mobileActiveIndex].title}
                   </span>
                 </>
@@ -113,7 +113,7 @@ export function NavBar() {
                     <span className="absolute inset-0" />
                   </>
                 )}
-                <MenuIcon open={open} className="w-6 h-6 stroke-slate-700" />
+                <MenuIcon open={open} className="w-6 h-6 stroke-stone-700" />
               </Popover.Button>
             </div>
             <Popover.Panel className="absolute inset-x-0 top-0 bg-white/95 py-3.5 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur">
@@ -130,7 +130,7 @@ export function NavBar() {
                   >
                     {(sectionIndex + 1).toString().padStart(2, '0')}
                   </span>
-                  <span className="ml-4 text-base font-medium text-slate-900">
+                  <span className="ml-4 text-base font-medium text-stone-900">
                     {section.title}
                   </span>
                 </Popover.Button>
@@ -140,10 +140,10 @@ export function NavBar() {
           </>
         )}
       </Popover>
-      <div className="hidden sm:flex sm:h-32 sm:justify-center sm:border-b sm:border-slate-200 sm:bg-white/95 sm:[@supports(backdrop-filter:blur(0))]:bg-white/80 sm:[@supports(backdrop-filter:blur(0))]:backdrop-blur">
+      <div className="hidden sm:flex sm:h-32 sm:justify-center sm:border-b sm:border-stone-200 sm:bg-white/95 sm:[@supports(backdrop-filter:blur(0))]:bg-white/80 sm:[@supports(backdrop-filter:blur(0))]:backdrop-blur">
         <ol
           role="list"
-          className="mb-[-2px] grid auto-cols-[minmax(0,15rem)] grid-flow-col text-base font-medium text-slate-900 [counter-reset:section]"
+          className="mb-[-2px] grid auto-cols-[minmax(0,15rem)] grid-flow-col text-base font-medium text-stone-900 [counter-reset:section]"
         >
           {sections.map((section, sectionIndex) => (
             <li key={section.id} className="flex [counter-increment:section]">
@@ -153,7 +153,7 @@ export function NavBar() {
                   'flex w-full flex-col items-center justify-center border-b-2 before:mb-2 before:font-mono before:text-sm before:content-[counter(section,decimal-leading-zero)]',
                   sectionIndex === activeIndex
                     ? 'border-fuchsia-600 bg-fuchsia-50 text-fuchsia-600 before:text-fuchsia-600'
-                    : 'border-transparent before:text-slate-500 hover:bg-fuchsia-50/40 hover:before:text-slate-900'
+                    : 'border-transparent before:text-stone-500 hover:bg-fuchsia-50/40 hover:before:text-stone-900'
                 )}
               >
                 {section.title}
