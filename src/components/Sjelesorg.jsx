@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     id: 6,
-    question: 'Hvem kan kalle seg sjelesørgere?',
+    question: 'Hvem kan kalle seg sjelesørger?',
     answer:
       'Sjelesørger er ingen beskyttet tittel. Det betyr at alle i prinsippet kan kalle seg sjelesørger når de er samtalepartnere som ønsker å hjelpe et medmenneske. Våre sjelesørgere har relevant utdanning og erfaring som gjør dem særlig godt egnet til å være sjelesørgere. Les mer om kompetansen og erfaringen til hver enkelt av våre sjelesørgere',
     link: 'her',

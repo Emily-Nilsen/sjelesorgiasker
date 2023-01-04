@@ -45,7 +45,7 @@ const sjelesorgere = [
     name: 'Trond Arne Hauge',
     role: 'Prest (pensjonist)',
     image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_face,h_252,w_295/v1671638360/Sjelesorg%20i%20Asker/Bilde_Trond_Arne_Hauge_glywed.png',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_face,h_480,w_480/Sjelesorg%20i%20Asker/Trond_Arne_zf0ubg.jpg',
     profile: [
       'I 40 år har jeg arbeidet som prest. Fra 1980 til 1989 i Øksnes i Vesterålen, en fiskerikommune, og i Holmen i Asker, fra 1989 til 2020. Jeg ble pensjonist fra 2020. Jeg har videreutdanning med spesialkompetanse i praktisk prestetjeneste innenfor sjelesorg, veiledning og ledelse, studieopphold i USA, Fuller, Los Angels, med temaer om kirkevekst, ulike virkelighetssyn og hvordan kommunisere kristentro inn i vår tid.',
       'Erfaringer fra prestetjenesten er at det kan hjelpe å samtale om det som opptar oss i livene våre. Samtalen kan gi innsikt og forandre livskvaliteten til det bedre.',

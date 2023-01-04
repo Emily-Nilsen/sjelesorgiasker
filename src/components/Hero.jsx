@@ -10,7 +10,7 @@ function Testimonial() {
     <figure className="relative z-10 max-w-md p-2 pt-6 mx-auto text-center sm:p-0 lg:mx-0 lg:text-left">
       <blockquote className="mt-2">
         <p className="text-lg font-medium text-white font-display sm:text-xl">
-          “I’ve looked at clouds from both sides now.”
+          “I’ve looked at life from both sides now.”
         </p>
       </blockquote>
       <figcaption className="mt-2 text-xs font-medium text-fuchsia-200 sm:text-sm">

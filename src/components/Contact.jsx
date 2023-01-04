@@ -232,7 +232,7 @@ export function Contact() {
                 </div>
               </form>
             </AuthLayout>
-            <p className="mt-8 opacity-100">
+            {/* <p className="mt-8 opacity-100">
               <Link
                 target="_blank"
                 rel="noreferrer"
@@ -242,7 +242,7 @@ export function Contact() {
                 <FacebookIcon className="w-10 h-10 fill-current" />
                 <span className="ml-4">Følg oss på Facebook</span>
               </Link>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
