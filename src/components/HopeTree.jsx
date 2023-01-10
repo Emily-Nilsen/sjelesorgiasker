@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Logo } from '@/components/Logo'
+import { CameraIcon } from '@heroicons/react/24/solid'
 
 export function HopeTree() {
   return (
@@ -69,20 +70,27 @@ export function HopeTree() {
           </div>
 
           <div>
-            <div className="overflow-hidden rounded-lg aspect-w-1 aspect-h-1 bg-stone-100">
+            <div className="overflow-hidden rounded-lg aspect-w-4 aspect-h-5 bg-stone-100">
               <Image
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1671638477/Sjelesorg%20i%20Asker/Hilde_Harket_Ostenstad8_-_altersmykke_web_gstkhq.jpg"
-                alt="Østenstad kirke - bilde av Hilde Harket"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Sjelesorg%20i%20Asker/Ha%CC%8Apstreet_Olavskirken_075_u1m8od.jpg"
+                alt="Håpstreet i Olavskirken - bilde av Unni Tobiassen Lie"
                 className="object-cover object-center w-full h-full"
                 fill
               />
             </div>
+            <figcaption className="flex items-center mt-0 text-base italic font-base text-stone-600">
+              <CameraIcon
+                className="flex-none w-5 h-5 text-fuchsia-300"
+                aria-hidden="true"
+              />
+              <span className="ml-2">Foto tatt av Unni Tobiassen Lie</span>
+            </figcaption>
             <div className="grid grid-cols-2 gap-4 mt-4 sm:mt-6 sm:gap-6 lg:mt-8 lg:gap-8">
               <div className="overflow-hidden rounded-lg h-fit bg-stone-100">
                 <div className="relative object-cover object-center w-full h-full overflow-hidden rounded-lg">
                   <Image
-                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1672677363/Sjelesorg%20i%20Asker/tree_yp2a6g.jpg"
-                    alt="Håpstreet i Olavskirken"
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1671638477/Sjelesorg%20i%20Asker/Hilde_Harket_Ostenstad8_-_altersmykke_web_gstkhq.jpg"
+                    alt="Østenstad kirke - Foto tatt av Hilde Harket"
                     width={200}
                     height={200}
                     className="object-cover object-center w-full overflow-hidden rounded-lg"
