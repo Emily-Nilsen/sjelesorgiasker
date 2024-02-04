@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Church",
+  "name": "Sjelesorg i Asker",
+  "alternateName": "Østenstad Menighet",
+  "url": "https://sjelesorgiasker.no",
+  "logo": "https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Sjelesorg%20i%20Asker/Sjelesorgiasker_itbvhw.png",
+  "image": [
+    "https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_face,h_585,w_975,x_0/v1671638445/Sjelesorg%20i%20Asker/Bilde_av_Astrid_S%C3%A6trang_Morvik_pkiopj.png",
+    "https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Sjelesorg%20i%20Asker/%C3%98stenstad_kirke_eydpot.jpg"
+  ],
+  "description": "Sjelesorg i Asker: Et tilbud om samtaler til dem som trenger det.",
+  "slogan": "Sorg og kjærlighetssorg, eksistensielle spørsmål og troskriser - det er ingenting som er for stort eller for lite å snakke med en sjelesørger om.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Vettre",
+    "addressRegion": "Akershus",
+    "postalCode": "1392",
+    "streetAddress": "Gudolf Blakstads vei 40",
+    "addressCountry": "Norge"
+  },
+  "hasMap": "https://www.google.com/maps/place/%C3%98stenstad+menighet/@59.8126377,10.4616213,17z/data=!3m1!4b1!4m5!3m4!1s0x46411574000c6d5b:0x4358793260a7b359!8m2!3d59.8124251!4d10.4638969",
+  "openingHours": "Mo-Su",
+  "telephone": "+4766754090",
+  "keywords": "Sjelesorg, Samtale,Livskrise, Sorg, Kjærlighetssorg, Konflikter, Relasjoner,Problemer, Forbønn, Skriftemål, Kirke, Håp, Hjelp, Asker,Østenstad kirke, jeg trenger hjelp, trenger hjelp, konflikt, problem"
+}
