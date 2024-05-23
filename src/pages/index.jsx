@@ -96,8 +96,8 @@ export default function Home() {
           å oppdage utveier i en fastlåst situasjon.”
         </p>
       </Quote>
-      <PeaceOfMind />
-      <Invitation />
+      {/* <PeaceOfMind /> */}
+      {/* <Invitation /> */}
       {/* <RecreationWeek /> */}
 
       <Footer />

@@ -7,7 +7,7 @@ const sections = [
   { id: 'sjelesorg', title: 'Sjelesorg' },
   { id: 'sjelesørgere', title: 'Sjelesørgere' },
   { id: 'kontakt', title: 'Ta kontakt' },
-  { id: 'sjelefred', title: 'Sjelefred' },
+  // { id: 'sjelefred', title: 'Sjelefred' },
   // {
   //   id: 'retreatuke',
   //   title: 'Rekreasjonshelg',
@@ -81,7 +81,7 @@ export function NavBar() {
           <>
             <div
               className={clsx(
-                'relative flex items-center py-3 px-4',
+                'relative flex items-center px-4 py-3',
                 !open &&
                   'bg-white/95 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur'
               )}
@@ -112,7 +112,7 @@ export function NavBar() {
                     <span className="absolute inset-0" />
                   </>
                 )}
-                <MenuIcon open={open} className="w-6 h-6 stroke-stone-700" />
+                <MenuIcon open={open} className="h-6 w-6 stroke-stone-700" />
               </Popover.Button>
             </div>
             <Popover.Panel className="absolute inset-x-0 top-0 bg-white/95 py-3.5 shadow-sm [@supports(backdrop-filter:blur(0))]:bg-white/80 [@supports(backdrop-filter:blur(0))]:backdrop-blur">
@@ -121,7 +121,7 @@ export function NavBar() {
                   as={Link}
                   key={section.id}
                   href={`#${section.id}`}
-                  className="flex items-center py-1.5 px-4"
+                  className="flex items-center px-4 py-1.5"
                 >
                   <span
                     aria-hidden="true"
@@ -135,7 +135,7 @@ export function NavBar() {
                 </Popover.Button>
               ))}
             </Popover.Panel>
-            <div className="absolute inset-x-0 z-10 h-4 bg-white bottom-full" />
+            <div className="absolute inset-x-0 bottom-full z-10 h-4 bg-white" />
           </>
         )}
       </Popover>
