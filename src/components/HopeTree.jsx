@@ -68,14 +68,9 @@ export function HopeTree() {
                 </h3>
                 <p className="mt-3 text-base text-stone-600">
                   Vår logo er designet av{' '}
-                  <a
-                    className="font-semibold text-fuchsia-600"
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://www.norsknett.no/"
-                  >
+                  <span className="font-semibold text-fuchsia-600">
                     Emily Nilsen
-                  </a>
+                  </span>
                   . Vi ønsket oss en logo som er jordnær og som viser at
                   sjelesorg gir hjelp til vekst. Så tegnet hun treet.
                   Animasjonen du ser når du åpner siden, viser at treet springer
