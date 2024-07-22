@@ -46,7 +46,7 @@ export function HopeTree() {
                   className="relative mx-auto rounded-xl"
                   width={1296}
                   height={1944}
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1673365952/Sjelesorg%20i%20Asker/Ha%CC%8Apstreet_Olavskirken_075_u1m8od.jpg"
+                  src="/images/hope-tree.webp"
                   alt="Håpstreet i Olavskirken - bilde av Unni Tobiassen Lie"
                 />
                 <figcaption className="font-base mt-0 flex items-center text-base italic text-stone-600">

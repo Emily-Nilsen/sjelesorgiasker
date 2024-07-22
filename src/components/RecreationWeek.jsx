@@ -20,13 +20,13 @@ export function RecreationWeek() {
     <section
       id="retreatuke"
       aria-labelledby="retreatuke-title"
-      className="py-16 scroll-mt-14 sm:scroll-mt-32 sm:py-20 lg:py-32"
+      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
         <SectionHeading number="5" id="retreatuke-title">
           Rekreasjonshelg
         </SectionHeading>
-        <p className="mt-8 text-4xl font-bold tracking-tight font-display text-stone-900">
+        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-stone-900">
           Rekreasjonshelg på Løkenes gård
         </p>
         <p className="mt-4 text-lg tracking-tight text-stone-700">
@@ -49,12 +49,12 @@ export function RecreationWeek() {
                   .slice(0, isExpanded ? undefined : 0)
                   .map(([title, pages]) => (
                     <li key={title}>
-                      <h3 className="text-3xl font-bold tracking-tight font-display text-stone-900">
+                      <h3 className="font-display text-3xl font-bold tracking-tight text-stone-900">
                         {title}
                       </h3>
                       <ol
                         role="list"
-                        className="px-6 py-3 mt-8 text-base tracking-tight divide-y divide-stone-300/30 rounded-2xl bg-stone-50 sm:py-7 sm:px-8"
+                        className="mt-8 divide-y divide-stone-300/30 rounded-2xl bg-stone-50 px-6 py-3 text-base tracking-tight sm:px-8 sm:py-7"
                       >
                         {Object.entries(pages).map(([title]) => (
                           <li
@@ -75,11 +75,11 @@ export function RecreationWeek() {
                   ))}
               </ol>
               {isExpanded ? (
-                <div className="mx-auto mt-6 tracking-tight prose prose-lg prose-fuchsia text-stone-700">
+                <div className="prose prose-lg prose-fuchsia mx-auto mt-6 tracking-tight text-stone-700">
                   <figure className="my-10">
                     <Image
                       className="w-full rounded-lg"
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Sjelesorg%20i%20Asker/L%C3%B8kenes_g%C3%A5rd_nwgdhf.jpg"
+                      src="/images/recreation-week.webp"
                       alt="Løkenes gård"
                       width={1080}
                       height={551}
@@ -89,7 +89,7 @@ export function RecreationWeek() {
                       Konglungen, har strandlinje og kyststi. Foto: Karl Braanes
                     </figcaption>
                   </figure>
-                  <p className="mt-12 text-3xl font-bold tracking-tight font-display text-stone-900">
+                  <p className="mt-12 font-display text-3xl font-bold tracking-tight text-stone-900">
                     Praktisk info
                   </p>
                   <ul role="list">

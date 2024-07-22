@@ -12,7 +12,7 @@ const resources = [
       return (
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_face,h_300,w_480,q_auto,f_auto/Sjelesorg%20i%20Asker/Anne_Kristine_Merkesvik_pianist_nstdry.jpg"
+            src="/images/peace-of-mind-img-1.webp"
             alt="Anne Kristine Merkesvik"
             className="relative object-cover"
             fill
@@ -30,7 +30,7 @@ const resources = [
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
             className="relative object-cover"
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/c_crop,g_north,h_951,w_1181,y_0/v1671638462/Sjelesorg%20i%20Asker/Hilde_Harket_Ostenstad_lys_pjk5yi.jpg"
+            src="/images/peace-of-mind-img-3.webp"
             alt="Sjelefred i Asker kirke"
             fill
             unoptimized
@@ -48,7 +48,7 @@ const resources = [
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="relative h-full w-full object-cover">
             <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/f_auto,q_auto/Sjelesorg%20i%20Asker/Hilde_Harket_Ostenstad9_-_vinduslys_sq04am.jpg"
+              src="/images/peace-of-mind-img-2.webp"
               alt="Sjelefred i Asker kirke"
               fill
               unoptimized

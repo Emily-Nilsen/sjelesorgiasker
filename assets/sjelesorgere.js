@@ -2,8 +2,7 @@ const sjelesorgere = [
   {
     name: 'Astrid Sætrang Morvik',
     role: 'Sokneprest i Østenstad',
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_face,h_585,w_975,x_0/v1671638445/Sjelesorg%20i%20Asker/Bilde_av_Astrid_S%C3%A6trang_Morvik_pkiopj.png',
+    image: '/images/Astrid_Sætrang_Morvik.webp',
     profile: [
       'Som prest i Den norske kirke siden 1994, har jeg hvert år mange samtaler om kjærlighet, sorg og tro med mennesker som trenger kirkens tjenester i forbindelse med dåp, vigsel og begravelser.',
       'De siste fem årene har jeg videreutdannet meg og tatt en mastergrad i klinisk sjelesorg. Dette har gitt meg fordypet innsikt i meg selv og andre. Å bidra til at mennesker skal forstå seg selv og den situasjonen de står i, finner jeg dypt meningsfullt.',
@@ -14,8 +13,7 @@ const sjelesorgere = [
   {
     name: 'Marianne M. Iversen',
     role: 'Gestaltterapeut',
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Sjelesorg%20i%20Asker/marianne_sqifvw.webp',
+    image: '/images/marianne.webp',
     profile: [
       'Jeg arbeider som gestaltterapeut i egen privat samtalepraksis, og har gjort det siden år 2000. Her møter jeg unge, voksne og eldre, par, familier og enestående i veldig forskjellige livssituasjoner.',
       'Noen kommer med en helt klar situasjon de vil snakke om, noen ønsker å sortere tanker og reaksjoner, noen står midt i en krise eller har noe foran eller bak seg som det er vanskelig å bli ferdig med.',
@@ -30,8 +28,7 @@ const sjelesorgere = [
   {
     name: 'Oscar Braadlie',
     role: 'Sykehusprest (pensjonist)',
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_face,h_323,w_480/v1671638321/Sjelesorg%20i%20Asker/Bilde_Oscar_Braadlie_e0wtff.jpg',
+    image: '/images/Oscar_Braadlie.webp',
     profile: [
       'Jeg har vært sykehus- og institusjonsprest i 40 år, 33 av dem ved Blakstad Sykehus og Klinikk for Psykisk Helse og Rus i Vestre Viken Helseforetak, og nylig ble jeg pensjonist. I alle disse årene har jeg som sjelesørger og prest samtalt og blitt kjent med mange mennesker. Det har vært enkeltpersoner med psykisk lidelse eller i en livskrise, samt pårørende og familier.',
       'I tillegg til utdanningen som prest, har jeg en pastoralklinisk utdanning (tilsvarende master i sjelesorg etter dagens ordning). Jeg har også lang erfaring som veileder for personale i forhold til arbeidssituasjon og etiske problemstillinger. Som sykehusprest har det også vært viktig å ha mottatt psykoterapiveiledning og fått mulighet til å gå i egenterapi.',
@@ -41,8 +38,7 @@ const sjelesorgere = [
   {
     name: 'Andreas Øksnes',
     role: 'Sokneprest i Heggedal',
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Sjelesorg%20i%20Asker/IMG_1883_nab0qe.jpg',
+    image: '/images/Andreas.webp',
     profile: [
       'Jeg er prest i Den norske kirke og har jobbet som feltprest i Forsvaret siden 2015. Fra vinteren 2023 er jeg sokneprest i Heggedal menighet.',
       'Som feltprest har jeg vært samtalepartner for både ansatte og vernepliktige soldater. Samtalene er preget av livskriser, savn, mangel på mestring, familierelasjoner, kjærlighetsrelasjoner, tro og tvil - helt vanlige bekymringer og utfordringer. Dette er en stor del av jobben min, og årlig har jeg hatt ca. 300 slike samtaler.',
@@ -53,8 +49,7 @@ const sjelesorgere = [
   {
     name: 'Evy Kjønigsen',
     role: 'Psykiatrisk sykepleier (pensjonist)',
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Sjelesorg%20i%20Asker/Evy_Alice_Kj%C3%B8nigsen_nyjzl6.webp',
+    image: '/images/Evy_Alice_Kjønigsen.webp',
     profile: [
       'Jeg har vært pensjonist i mange år. De siste femten årene av mitt yrkesaktive liv jobbet jeg på psykiatrisk avdeling som psykiatrisk sykepleier med pasienter med alvorlige psykiske lidelser. Det var lærerikt, utfordrende og veldig spennende. Siden 2009 har jeg vært med og ledet sorggrupper gjennom kirken i Asker prosti. Jeg har opplevd det veldig meningsfullt og givende å møte mennesker i sorg og krise og få gå sammen med dem gjennom den første vanskelige tiden etter et dødsfall.',
       'Tidligere har jeg vært gjennom kurs i sjelesorg, tatt gestaltveilederutdanning, og jeg har vært gjennom opplæring og praktisering av åndelig veiledning på Lia Gård. Jeg har periodevis hatt mennesker til samtale hos meg over lengre tid. Jeg har selv erfaring med å gå til sjelesorg og jeg går jevnlig til åndelig veiledning. Det å være på retreat med jevne mellomrom har vært en bærebjelke i livet mitt.',
@@ -64,8 +59,7 @@ const sjelesorgere = [
   {
     name: 'Kari Anne Omberg Lier',
     role: 'Prostiprest i Asker og prest i Holmen',
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Sjelesorg%20i%20Asker/Kari_Anne_Omberg_Lier_lhi84k.webp',
+    image: '/images/Kari_Anne_Omberg_Lier.webp',
     profile: [
       'Jeg utdannet meg til prest i Den norske kirke i voksen alder. Før jeg ble prest jobbet jeg over 30 år som kirkemusiker. Hele tiden har menneskemøter og samtaler vært viktig for meg.',
       'Jeg har hele livet utfordret meg selv, lett etter hvem *jeg* egentlig er, hvem *vi* er som mennesker, og hvem Gud er, Gud som kjenner oss bedre enn vi gjør selv. Går det virkelig an å bli kjent med *Gud*? Og hvordan i all verden gjør man det? Hva kan det være, det å tro? Hva er det å be?',
@@ -77,8 +71,7 @@ const sjelesorgere = [
   {
     name: 'Thomas Hauge',
     role: 'Psykiatrisk sykepleier og psykoterapeut',
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Sjelesorg%20i%20Asker/Thomas_Hauge_pyjn78.webp',
+    image: '/images/Thomas_Hauge.webp',
     profile: [
       'Min grunnutdanning er sykepleier med videreutdanning i psykiatri. Jeg har nå jobbet innen dette fagfeltet i over 40 år bl.a. på Dikemark, Blakstad, Bjørnegård og Modum Bad.',
       'Dette har gitt meg mye og variert samtaleerfaring og stor bredde. Jeg tror jeg kan si at intet menneskelig er meg fremmed.',

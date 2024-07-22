@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 function Testimonial() {
   return (
-    <figure className="relative z-10 max-w-md mx-auto text-center lg:mx-0 lg:text-left">
+    <figure className="relative z-10 mx-auto max-w-md text-center lg:mx-0 lg:text-left">
       <blockquote className="mt-2">
-        <p className="text-3xl font-medium font-display text-stone-900">
+        <p className="font-display text-3xl font-medium text-stone-900">
           “Å gi mennesker anledning til å snakke sant om livet og lufte tankene
           sine, er noe jeg finner svært meningsfullt.”
         </p>
@@ -33,16 +33,16 @@ export function ImageSubSection() {
     <div className="relative h-full">
       <div aria-hidden="true" className="relative animate-fade-in">
         <Image
-          src="https://res.cloudinary.com/dt3k2apqd/image/upload/f_auto,q_auto/Sjelesorg%20i%20Asker/therapy_02_hyjlzb.jpg"
+          src="/images/therapy.webp"
           width={5345}
           height={3563}
           alt="Photo by Priscilla Du Preez on Unsplash"
-          className="object-cover object-center w-full h-96 animate-fade-in"
+          className="h-96 w-full animate-fade-in object-cover object-center"
         />
         <div className="absolute inset-0 h-full bg-gradient-to-t from-white" />
       </div>
-      <div className="relative px-4 pb-16 mx-auto -mt-12 max-w-7xl sm:px-6 sm:pb-24 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center lg:max-w-4xl">
+      <div className="relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center lg:max-w-4xl">
           <Testimonial />
         </div>
       </div>

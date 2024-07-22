@@ -42,8 +42,7 @@ export default function Home() {
         author={{
           name: 'Marianne M Iversen',
           role: 'Gestaltterapeut',
-          image:
-            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/markus-spiske-CznP38QmCCI-unsplash_dsufgj.jpg',
+          image: '/images/quote-1.webp',
         }}
       >
         <p>
@@ -58,8 +57,7 @@ export default function Home() {
         author={{
           name: 'Oscar Braadlie',
           role: 'Sykehusprest (pensjonist)',
-          image:
-            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/therapy_01_cvjhwa.jpg',
+          image: '/images/quote-4.webp',
         }}
       >
         <p>
@@ -73,8 +71,7 @@ export default function Home() {
         author={{
           name: 'Trond Arne Hauge',
           role: 'Prest (1953-2023)',
-          image:
-            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/praying_square_j2j5e9.jpg',
+          image: '/images/quote-2.webp',
         }}
       >
         <p>
@@ -87,8 +84,7 @@ export default function Home() {
         author={{
           name: 'Astrid Sætrang Morvik',
           role: 'Sokneprest i Østenstad',
-          image:
-            'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,c_fill,h_200,w_200/Sjelesorg%20i%20Asker/flower_in_crack_ybj3ac.jpg',
+          image: '/images/quote-3.webp',
         }}
       >
         <p>

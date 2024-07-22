@@ -39,7 +39,7 @@ export function Contact() {
     <section
       id="kontakt"
       aria-labelledby="kontakt-title"
-      className="relative scroll-mt-14 pt-16 pb-3 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
+      className="relative scroll-mt-14 pb-3 pt-16 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
     >
       <div className="absolute inset-x-0 bottom-0 top-1/2 text-stone-900/10 [mask-image:linear-gradient(transparent,white)]">
         <GridPattern x="50%" y="100%" />
@@ -49,7 +49,7 @@ export function Contact() {
           <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-stone-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
             <Image
               className="absolute inset-0 h-full w-full object-cover"
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1671638480/Sjelesorg%20i%20Asker/Hilde_Totland_Harket_Ostenstad6_-_tak_web_qpqfsn.jpg"
+              src="/images/contact-img.webp"
               alt="Østenstad kirke"
               fill
               sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
@@ -172,7 +172,7 @@ export function Contact() {
                         name="form-message"
                         aria-describedby="form-message-description"
                         rows={4}
-                        className="shadow-none block w-full min-w-0 flex-auto appearance-none rounded-md border border-stone-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-stone-800/5 placeholder:text-stone-400 focus:border-fuchsia-500 focus:outline-none focus:ring-4 focus:ring-fuchsia-500/10 dark:border-stone-700 dark:bg-stone-700/[0.15] dark:text-stone-200 dark:placeholder:text-stone-500 dark:focus:border-fuchsia-400 dark:focus:ring-fuchsia-400/10 sm:text-base"
+                        className="shadow-none block w-full min-w-0 flex-auto appearance-none rounded-md border border-stone-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-stone-800/5 placeholder:text-stone-400 focus:border-fuchsia-500 focus:outline-none focus:ring-4 focus:ring-fuchsia-500/10 sm:text-base dark:border-stone-700 dark:bg-stone-700/[0.15] dark:text-stone-200 dark:placeholder:text-stone-500 dark:focus:border-fuchsia-400 dark:focus:ring-fuchsia-400/10"
                         defaultValue={''}
                       />
                     </div>
@@ -192,7 +192,7 @@ export function Contact() {
                           className="h-4 w-4 rounded border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
                         />
                       </div>
-                      <div className="ml-3 -mt-1 text-base ">
+                      <div className="-mt-1 ml-3 text-base ">
                         <label
                           htmlFor="samtykke"
                           className="font-medium tracking-normal text-stone-600"

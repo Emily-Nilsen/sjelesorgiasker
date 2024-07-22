@@ -4,11 +4,8 @@
   "name": "Sjelesorg i Asker",
   "alternateName": "Østenstad Menighet",
   "url": "https://sjelesorgiasker.no",
-  "logo": "https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Sjelesorg%20i%20Asker/Sjelesorgiasker_itbvhw.png",
-  "image": [
-    "https://res.cloudinary.com/dt3k2apqd/image/upload/c_fill,g_face,h_585,w_975,x_0/v1671638445/Sjelesorg%20i%20Asker/Bilde_av_Astrid_S%C3%A6trang_Morvik_pkiopj.png",
-    "https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Sjelesorg%20i%20Asker/%C3%98stenstad_kirke_eydpot.jpg"
-  ],
+  "logo": "/images/logo_with_text.webp",
+  "image": ["/images/Astrid_Sætrang_Morvik.webp", "/images/kirke_asker.webp"],
   "description": "Sjelesorg i Asker: Et tilbud om samtaler til dem som trenger det.",
   "slogan": "Sorg og kjærlighetssorg, eksistensielle spørsmål og troskriser - det er ingenting som er for stort eller for lite å snakke med en sjelesørger om.",
   "address": {
