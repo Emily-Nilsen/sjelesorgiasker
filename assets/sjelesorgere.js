@@ -35,17 +35,7 @@ const sjelesorgere = [
       'Sjelesorgsamtaler ser jeg på som et samarbeid mellom den som kommer til samtaler og meg som sjelesørger og prest. Den som ber om samtaler er selv eksperten på eget liv og hvordan det oppleves, og sammen kan vi gå inn i følelser, tanker og spørsmål som har med ens liv å gjøre. I en sjelesorgsamtale vil det alltid være rom for alle slags spørsmål om livet, tro og tanker om hva som gir livet mening.  Da er det viktig for sjelesørgeren å være fleksibel med tanke på hvordan man tilnærmer seg det som tas opp i samtalen. Den bør oppleves å være i samsvar med de behov som kommer opp.',
     ],
   },
-  {
-    name: 'Andreas Øksnes',
-    role: 'Sokneprest i Heggedal',
-    image: '/images/Andreas.webp',
-    profile: [
-      'Jeg er prest i Den norske kirke og har jobbet som feltprest i Forsvaret siden 2015. Fra vinteren 2023 er jeg sokneprest i Heggedal menighet.',
-      'Som feltprest har jeg vært samtalepartner for både ansatte og vernepliktige soldater. Samtalene er preget av livskriser, savn, mangel på mestring, familierelasjoner, kjærlighetsrelasjoner, tro og tvil - helt vanlige bekymringer og utfordringer. Dette er en stor del av jobben min, og årlig har jeg hatt ca. 300 slike samtaler.',
-      'Jeg har tatt videreutdanning innen sjelesorg. I 2018 tok jeg Pastoral Klinisk Utdanning (PKU) 501, og i 2022 tok jeg PKU 502. Planen er å ta en mastergrad i klinisk sjelesorg.',
-      'Å gi mennesker anledning til å snakke sant om livet og lufte tankene sine, er noe jeg finner svært meningsfullt. Det ønsker jeg å være med å legge til rette for i Asker.',
-    ],
-  },
+
   {
     name: 'Evy Kjønigsen',
     role: 'Psykiatrisk sykepleier (pensjonist)',
@@ -80,6 +70,29 @@ const sjelesorgere = [
       'Derfor vet jeg også hvor utfordrende det kan være å motta hjelp.',
       'Selv om jeg nå er delvis pensjonist, ønsker jeg fortsatt å kunne være til hjelp og nytte for andre. Det er også en stor glede for meg å kunne bidra i en kirkelig sammenheng, da kirken har gitt meg så mye, helt siden jeg var helt ung.',
       'Velkommen til meg de som måtte ønske seg en god samtale!',
+    ],
+  },
+  // {
+  //   name: 'Andreas Øksnes',
+  //   role: 'Sokneprest i Heggedal',
+  //   image: '/images/Andreas.webp',
+  //   profile: [
+  //     'Jeg er prest i Den norske kirke og har jobbet som feltprest i Forsvaret siden 2015. Fra vinteren 2023 er jeg sokneprest i Heggedal menighet.',
+  //     'Som feltprest har jeg vært samtalepartner for både ansatte og vernepliktige soldater. Samtalene er preget av livskriser, savn, mangel på mestring, familierelasjoner, kjærlighetsrelasjoner, tro og tvil - helt vanlige bekymringer og utfordringer. Dette er en stor del av jobben min, og årlig har jeg hatt ca. 300 slike samtaler.',
+  //     'Jeg har tatt videreutdanning innen sjelesorg. I 2018 tok jeg Pastoral Klinisk Utdanning (PKU) 501, og i 2022 tok jeg PKU 502. Planen er å ta en mastergrad i klinisk sjelesorg.',
+  //     'Å gi mennesker anledning til å snakke sant om livet og lufte tankene sine, er noe jeg finner svært meningsfullt. Det ønsker jeg å være med å legge til rette for i Asker.',
+  //   ],
+  // },
+  {
+    name: 'Kjellaug Andersen',
+    role: 'Pensjonert lege',
+    image: '/images/Kjellaug_Andersen.webp',
+    profile: [
+      'Jeg er utdannet lege og psykiater og har jobbet som lege i mer enn 40 år før jeg ble pensjonist høsten 2023.',
+      'Som lege i forskjellige felt av medisinen, har jeg møtt mennesker i mange ulike situasjoner.',
+      'Jeg er mangeårig kirkegjenger og har vært innom ulike kristne sammenhenger.',
+      'I unge og formative år ble jeg med i et miljø som jeg siden trengte å ta et oppgjør med. Av den grunn begynte jeg på Menighetsfakultetet og tok kristendom hovedfag. Hovedoppgaven var et teologisk oppgjør med dette miljøet. Jeg har derfor et særlig hjerte for dem som har blandede erfaringer fra religiøse miljøer. I arbeidet med denne eksistensielle hovedoppgaven hadde jeg god nytte av sjelesorg ved Institutt for Sjelesorg. Jeg har også andre og ulike erfaringer med å motta sjelesorg/veiledning, dette gjør at jeg er kjent på begge sider av bordet.',
+      'Jeg vet av utdanning og erfaring at det kan være nyttig å ha en samtalepartner å sortere tanker og følelser med. Med en som ikke har svarene, men som kan lytte og komme med innspill. Derfor synes jeg det er meningsfullt å kunne bidra med min kompetanse og erfaring.',
     ],
   },
 ]
