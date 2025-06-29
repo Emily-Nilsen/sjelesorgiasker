@@ -78,7 +78,7 @@ const faqs = [
     id: 12,
     question: 'Hvordan gjør jeg avtale med en sjelesørger?',
     answer:
-      'Ta kontakt med oss gjennom kontaktskjemaet under. Din melding sendes til leder for Sjelesorg i Asker, sokneprest Astrid Sætrang Morvik som videresender din forespørsel til en sjelesørger som har ledig kapasitet. Sjelesørgeren tar kontakt på telefon og gjør en avtale om tid og sted. Du kan regne med å få svar av din sjelesørger innen en uke.',
+      'Ta kontakt med oss gjennom kontaktskjemaet under. Din melding sendes til administrativ leder for Sjelesorg i Asker, Kari Anne Omberg Lier, som videresender din forespørsel til en sjelesørger som har ledig kapasitet. Sjelesørgeren tar kontakt på telefon og gjør en avtale om tid og sted. Du kan regne med å få svar av din sjelesørger innen en uke.',
   },
 ]
 
@@ -92,7 +92,7 @@ export function Sjelesorg() {
       id="sjelesorg"
       aria-labelledby="sjelesorg-title"
       aria-label="Sjelesorg"
-      className="pb-16 pt-20 sm:pb-20 md:pt-36 lg:py-32"
+      className="pt-20 pb-16 sm:pb-20 md:pt-36 lg:py-32"
     >
       <Container>
         <SectionHeading className="mb-10" number="1" id="sjelesorg-title">
@@ -100,9 +100,9 @@ export function Sjelesorg() {
         </SectionHeading>
 
         <div className="md:mx-none rounded-2xl bg-stone-50 sm:rounded-4xl md:-mx-20 md:rounded-6xl">
-          <div className="mx-auto max-w-7xl px-4 py-12 sm:px-12 sm:py-16 lg:px-8">
-            <div className="mx-auto max-w-3xl divide-y-2 divide-stone-200">
-              <h2 className="font-display text-4xl font-bold tracking-tight text-stone-900 sm:text-center">
+          <div className="px-4 py-12 mx-auto max-w-7xl sm:px-12 sm:py-16 lg:px-8">
+            <div className="max-w-3xl mx-auto divide-y-2 divide-stone-200">
+              <h2 className="text-4xl font-bold tracking-tight font-display text-stone-900 sm:text-center">
                 Ofte stilte spørsmål
               </h2>
               <dl className="mt-6 space-y-6 divide-y divide-stone-200">
@@ -111,11 +111,11 @@ export function Sjelesorg() {
                     {({ open }) => (
                       <>
                         <dt className="text-lg">
-                          <Disclosure.Button className="flex w-full items-start justify-between text-left text-stone-400">
+                          <Disclosure.Button className="flex items-start justify-between w-full text-left text-stone-400">
                             <span className="font-medium text-stone-900">
                               {faq.question}
                             </span>
-                            <span className="ml-6 flex h-7 items-center">
+                            <span className="flex items-center ml-6 h-7">
                               <ChevronDownIcon
                                 className={classNames(
                                   open ? '-rotate-180' : 'rotate-0',
@@ -126,7 +126,7 @@ export function Sjelesorg() {
                             </span>
                           </Disclosure.Button>
                         </dt>
-                        <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                        <Disclosure.Panel as="dd" className="pr-12 mt-2">
                           {faq.id === 10 ? (
                             <div
                               className="text-base text-stone-500"
@@ -141,7 +141,7 @@ export function Sjelesorg() {
                                   <span>
                                     {' '}
                                     <Link
-                                      className="font-semibold text-fuchsia-600 transition hover:text-fuchsia-700"
+                                      className="font-semibold transition text-fuchsia-600 hover:text-fuchsia-700"
                                       href="/#sjelesørgere"
                                     >
                                       {faq.link}
