@@ -82,14 +82,14 @@ export default function Home() {
       <Quote
         id="Quote-from-astrid-sætrang-morvik"
         author={{
-          name: 'Astrid Sætrang Morvik',
-          role: 'Sokneprest i Østenstad',
+          name: 'Kari Anne Omberg Lier',
+          role: 'Prostiprest i Asker og prest i Holmen',
           image: '/images/quote-3.webp',
         }}
       >
         <p>
-          “Noen trenger å forsone seg med livet slik det er, mens andre trenger
-          å oppdage utveier i en fastlåst situasjon.”
+          “Hvis du har tanker om at du har en slags tro, søken eller lengsel,
+          kan det være spennende å lete og utforske hvor Gud er i livet ditt.”
         </p>
       </Quote>
       {/* <PeaceOfMind /> */}

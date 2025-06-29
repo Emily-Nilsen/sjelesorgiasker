@@ -1,15 +1,15 @@
 const sjelesorgere = [
-  {
-    name: 'Astrid Sætrang Morvik',
-    role: 'Sokneprest i Østenstad',
-    image: '/images/Astrid_Sætrang_Morvik.webp',
-    profile: [
-      'Som prest i Den norske kirke siden 1994, har jeg hvert år mange samtaler om kjærlighet, sorg og tro med mennesker som trenger kirkens tjenester i forbindelse med dåp, vigsel og begravelser.',
-      'De siste fem årene har jeg videreutdannet meg og tatt en mastergrad i klinisk sjelesorg. Dette har gitt meg fordypet innsikt i meg selv og andre. Å bidra til at mennesker skal forstå seg selv og den situasjonen de står i, finner jeg dypt meningsfullt.',
-      'Jeg har særlig erfaring med samtaler om sorg av mange slag, samlivsbrudd og konflikter i nære relasjoner. Mitt bidrag i en slik samtale kan være å tilføre nye perspektiver på det man har opplevd eller opplever. Noen trenger å forsone seg med livet slik det er, mens andre trenger å oppdage utveier i en fastlåst situasjon. Noen trenger en samtalepartner til å sortere tanker og følelser, mens andre trenger hjelp til å ta vanskelige valg. Noen trenger bare omtanke og støtte for å holde seg oppreist gjennom tunge tider.',
-      'Jeg har også arbeidet mye med veiledning innenfor arbeidslivet i kirkelig sektor og har en master i praktisk teologi med vekt på ledelse. Les mer om min vei fram til opprettelse av Sjelesorg i Asker [her](https://kirken.no/nb-NO/fellesrad/askerfellesrad/menigheter/ostenstadkirke/sjelesorg%20i%20asker2/).',
-    ],
-  },
+  // {
+  //   name: 'Astrid Sætrang Morvik',
+  //   role: 'Sokneprest i Østenstad',
+  //   image: '/images/Astrid_Sætrang_Morvik.webp',
+  //   profile: [
+  //     'Som prest i Den norske kirke siden 1994, har jeg hvert år mange samtaler om kjærlighet, sorg og tro med mennesker som trenger kirkens tjenester i forbindelse med dåp, vigsel og begravelser.',
+  //     'De siste fem årene har jeg videreutdannet meg og tatt en mastergrad i klinisk sjelesorg. Dette har gitt meg fordypet innsikt i meg selv og andre. Å bidra til at mennesker skal forstå seg selv og den situasjonen de står i, finner jeg dypt meningsfullt.',
+  //     'Jeg har særlig erfaring med samtaler om sorg av mange slag, samlivsbrudd og konflikter i nære relasjoner. Mitt bidrag i en slik samtale kan være å tilføre nye perspektiver på det man har opplevd eller opplever. Noen trenger å forsone seg med livet slik det er, mens andre trenger å oppdage utveier i en fastlåst situasjon. Noen trenger en samtalepartner til å sortere tanker og følelser, mens andre trenger hjelp til å ta vanskelige valg. Noen trenger bare omtanke og støtte for å holde seg oppreist gjennom tunge tider.',
+  //     'Jeg har også arbeidet mye med veiledning innenfor arbeidslivet i kirkelig sektor og har en master i praktisk teologi med vekt på ledelse. Les mer om min vei fram til opprettelse av Sjelesorg i Asker [her](https://kirken.no/nb-NO/fellesrad/askerfellesrad/menigheter/ostenstadkirke/sjelesorg%20i%20asker2/).',
+  //   ],
+  // },
   {
     name: 'Marianne M. Iversen',
     role: 'Gestaltterapeut',
