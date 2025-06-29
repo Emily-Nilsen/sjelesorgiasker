@@ -3,18 +3,19 @@ import Image from 'next/image'
 
 function Testimonial() {
   return (
-    <figure className="relative z-10 mx-auto max-w-md text-center lg:mx-0 lg:text-left">
+    <figure className="relative z-10 max-w-md mx-auto text-center lg:mx-0 lg:text-left">
       <blockquote className="mt-2">
-        <p className="font-display text-3xl font-medium text-stone-900">
-          “Å gi mennesker anledning til å snakke sant om livet og lufte tankene
-          sine, er noe jeg finner svært meningsfullt.”
+        <p className="text-3xl font-medium font-display text-stone-900">
+          “Jeg vet av utdanning og erfaring at det kan være nyttig å ha en
+          samtalepartner å sortere tanker og følelser med. Med en som ikke har
+          svarene, men som kan lytte og komme med innspill.”
         </p>
       </blockquote>
       <figcaption className="mt-2 text-base text-stone-500">
         <strong className="font-semibold text-fuchsia-600 before:content-['—_']">
-          Andreas Øksnes
+          Kjellaug Andersen
         </strong>
-        , Sokneprest i Heggedal
+        , pensjonert lege
       </figcaption>
     </figure>
   )
@@ -37,12 +38,12 @@ export function ImageSubSection() {
           width={5345}
           height={3563}
           alt="Photo by Priscilla Du Preez on Unsplash"
-          className="h-96 w-full animate-fade-in object-cover object-center"
+          className="object-cover object-center w-full h-96 animate-fade-in"
         />
         <div className="absolute inset-0 h-full bg-gradient-to-t from-white" />
       </div>
-      <div className="relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center lg:max-w-4xl">
+      <div className="relative px-4 pb-16 mx-auto -mt-12 max-w-7xl sm:px-6 sm:pb-24 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center lg:max-w-4xl">
           <Testimonial />
         </div>
       </div>
