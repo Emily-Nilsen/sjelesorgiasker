@@ -95,6 +95,19 @@ const sjelesorgere = [
       'Jeg vet av utdanning og erfaring at det kan være nyttig å ha en samtalepartner å sortere tanker og følelser med. Med en som ikke har svarene, men som kan lytte og komme med innspill. Derfor synes jeg det er meningsfullt å kunne bidra med min kompetanse og erfaring.',
     ],
   },
+  {
+    name: 'Marit Iren Øyen',
+    role: 'Diakonmedarbeider i Asker kirke',
+    image: '/images/Marit.webp',
+    profile: [
+      'Til daglig er jeg ansatt som diakonmedarbeider i Asker kirke, der sjelesorgsamtaler er en av hovedoppgavene mine.',
+      'Før det jobbet jeg som behandlingsleder ved en institusjon for ungdom med alvorlig atferd- og rusproblematikk.',
+      'Jeg er utdannet spesialpedagog og familieterapeut.  Bak meg har jeg over 23 års erfaring i møte med barn, unge, par og familier som strever i hverdagen.',
+      'Som fagperson er jeg opptatt av en ressursorientert tilnærming med fokus på det som er helsefremmende. Jeg har jobbet mye med samspillet i familier og er godt kjent med kognitiv tilnærming',
+      'Jeg har ikke teologisk utdanning, men skrev en masteroppgave om en eksistensiell tilnærming i familieterapeutisk arbeid. Kristen tro og verdigrunnlag har vært til stede i egen oppvekst.',
+      'I møte med mennesker i en vanskelig livssituasjon er jeg opptatt å møte mennesker der de er i livet sitt.  Jeg kan tilføre noen andre perspektiver, sortere og løfte frem mestringsstrategier innenfor rammen av  sjelesorg og livets viktige spørsmål.',
+    ],
+  },
 ]
 
 export default sjelesorgere

@@ -39,16 +39,16 @@ export function Contact() {
     <section
       id="kontakt"
       aria-labelledby="kontakt-title"
-      className="relative scroll-mt-14 pb-3 pt-16 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
+      className="relative pt-16 pb-3 scroll-mt-14 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
     >
       <div className="absolute inset-x-0 bottom-0 top-1/2 text-stone-900/10 [mask-image:linear-gradient(transparent,white)]">
         <GridPattern x="50%" y="100%" />
       </div>
-      <div className="relative mx-auto max-w-5xl pt-16 sm:px-6">
-        <div className="bg-stone-50 pt-px sm:rounded-6xl">
+      <div className="relative max-w-5xl pt-16 mx-auto sm:px-6">
+        <div className="pt-px bg-stone-50 sm:rounded-6xl">
           <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-stone-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
             <Image
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 object-cover w-full h-full"
               src="/images/contact-img.webp"
               alt="Østenstad kirke"
               fill
@@ -63,7 +63,7 @@ export function Contact() {
             <SectionHeading number="3" id="contact-title">
               Ta kontakt
             </SectionHeading>
-            <p className="mt-8 font-display text-4xl font-extrabold tracking-tight text-stone-900 sm:text-5xl">
+            <p className="mt-8 text-4xl font-extrabold tracking-tight font-display text-stone-900 sm:text-5xl">
               <span className="block text-fuchsia-600">Ta kontakt –</span> Vi
               vil høre fra deg.
             </p>
@@ -152,7 +152,7 @@ export function Contact() {
                     <div className="flex justify-between">
                       <label
                         htmlFor="form-message"
-                        className="mb-2 block text-base font-semibold text-stone-900"
+                        className="block mb-2 text-base font-semibold text-stone-900"
                       >
                         Hva ønsker du å arbeide med i samtalene? (Ikke skriv
                         sensitiv informasjon)
@@ -183,16 +183,16 @@ export function Contact() {
                 <fieldset className="mt-6">
                   <div className="space-y-8">
                     <div className="relative flex items-start">
-                      <div className="flex h-5 items-center">
+                      <div className="flex items-center h-5">
                         <input
                           id="samtykke"
                           name="samtykke"
                           type="checkbox"
                           required
-                          className="h-4 w-4 rounded border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
+                          className="w-4 h-4 rounded border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
                         />
                       </div>
-                      <div className="-mt-1 ml-3 text-base ">
+                      <div className="ml-3 -mt-1 text-base ">
                         <label
                           htmlFor="samtykke"
                           className="font-medium tracking-normal text-stone-600"
@@ -209,7 +209,7 @@ export function Contact() {
 
                 <div className="flex gap-6 sm:justify-end">
                   <Button
-                    className="mt-8 w-fit px-10"
+                    className="px-10 mt-8 w-fit"
                     type="button"
                     href="#kontakt"
                     variant="outline"
@@ -221,7 +221,7 @@ export function Contact() {
                   <Button
                     type="submit"
                     color="fuchsia"
-                    className="mt-8 w-fit px-10"
+                    className="px-10 mt-8 w-fit"
                   >
                     Send inn
                   </Button>
