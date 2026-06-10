@@ -5,6 +5,7 @@ import clsx from 'clsx'
 
 import { Contact } from '@/components/Contact'
 import { Footer } from '@/components/Footer'
+import { IntakeBanner } from '@/components/IntakeBanner'
 import { HopeTree } from '@/components/HopeTree'
 import { Invitation } from '@/components/Invitation'
 import { Hero } from '@/components/Hero'
@@ -32,6 +33,7 @@ export default function Home() {
           content="Sjelesorg, Samtale,Livskrise, Sorg, Kjærlighetssorg, Konflikter, Relasjoner,Problemer, Forbønn, Skriftemål, Kirke, Håp, Hjelp, Asker,Østenstad kirke, jeg trenger hjelp, trenger hjelp, konflikt, problem"
         />
       </Head>
+      <IntakeBanner />
       <Hero />
       <Introduction />
       <NavBar />

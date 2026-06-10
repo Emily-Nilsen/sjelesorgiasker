@@ -8,6 +8,7 @@ import { Button } from '@/components/Button'
 import { RadioField, TextField } from '@/components/Fields'
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
+import { useIntakeClosed } from '@/lib/intakeStatus'
 
 import {
   motion,
@@ -34,21 +35,22 @@ function classNames(...classes) {
 
 export function Contact() {
   const [agreed, setAgreed] = useState(false)
+  const intakeClosed = useIntakeClosed()
 
   return (
     <section
       id="kontakt"
       aria-labelledby="kontakt-title"
-      className="relative pt-16 pb-3 scroll-mt-14 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
+      className="relative scroll-mt-14 pb-3 pt-16 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
     >
       <div className="absolute inset-x-0 bottom-0 top-1/2 text-stone-900/10 [mask-image:linear-gradient(transparent,white)]">
         <GridPattern x="50%" y="100%" />
       </div>
-      <div className="relative max-w-5xl pt-16 mx-auto sm:px-6">
-        <div className="pt-px bg-stone-50 sm:rounded-6xl">
+      <div className="relative mx-auto max-w-5xl pt-16 sm:px-6">
+        <div className="bg-stone-50 pt-px sm:rounded-6xl">
           <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-stone-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
             <Image
-              className="absolute inset-0 object-cover w-full h-full"
+              className="absolute inset-0 h-full w-full object-cover"
               src="/images/contact-img.webp"
               alt="Østenstad kirke"
               fill
@@ -63,65 +65,86 @@ export function Contact() {
             <SectionHeading number="3" id="contact-title">
               Ta kontakt
             </SectionHeading>
-            <p className="mt-8 text-4xl font-extrabold tracking-tight font-display text-stone-900 sm:text-5xl">
+            <p className="mt-8 font-display text-4xl font-extrabold tracking-tight text-stone-900 sm:text-5xl">
               <span className="block text-fuchsia-600">Ta kontakt –</span> Vi
               vil høre fra deg.
             </p>
-            <p className="mt-4 text-lg tracking-tight text-stone-600">
-              Om du fyller ut kontaktskjemaet under tar vi snart kontakt.
-            </p>
-            <AuthLayout>
-              <form
-                action="#"
-                subject="Kontakt Sjelesorg i Asker"
-                name="Sjelesorg i Asker - Kontakt skjema"
-                data-netlify="true"
-                method="POST"
-              >
-                <input
-                  type="hidden"
-                  name="form-name"
-                  value="Sjelesorg i Asker - Kontakt skjema"
-                />
-                <input
-                  type="hidden"
-                  name="tema"
-                  value="Kontakt Sjelesorg i Asker"
-                />
-                <div className="grid grid-cols-2 gap-6">
-                  <TextField
-                    label="Fornavn"
-                    id="first_name"
-                    name="first_name"
-                    type="text"
-                    autoComplete="given-name"
-                    required
-                  />
-                  <TextField
-                    label="Etternavn"
-                    id="last_name"
-                    name="last_name"
-                    type="text"
-                    autoComplete="family-name"
-                    required
-                  />
-                  <TextField
-                    label="Telefon"
-                    id="telefon"
-                    name="telefon"
-                    type="tel"
-                    autoComplete="tel"
-                    required
-                  />
-                  <TextField
-                    label="E-post"
-                    id="email"
-                    name="email"
-                    type="email"
-                    autoComplete="email"
-                    required
-                  />
-                  {/* <fieldset className="col-span-2">
+            {intakeClosed ? (
+              <div className="mt-8 rounded-2xl border border-fuchsia-200 bg-fuchsia-50 px-6 py-8 sm:px-10 sm:py-10">
+                <h3 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
+                  Venteliste og inntaksstopp
+                </h3>
+                <p className="mt-4 text-lg text-stone-600">
+                  Vi har dessverre venteliste og inntaksstopp for tiden. I
+                  perioden{' '}
+                  <span className="font-semibold text-stone-900">
+                    12. juni til og med 20. august
+                  </span>{' '}
+                  tar vi ikke imot nye forespørsler om sjelesorgsamtaler.
+                </p>
+                <p className="mt-4 text-lg text-stone-600">
+                  Du er hjertelig velkommen til å ta kontakt igjen fra 21.
+                  august. Takk for at du tenker på oss – vi ser frem til å høre
+                  fra deg etter sommeren.
+                </p>
+              </div>
+            ) : (
+              <>
+                <p className="mt-4 text-lg tracking-tight text-stone-600">
+                  Om du fyller ut kontaktskjemaet under tar vi snart kontakt.
+                </p>
+                <AuthLayout>
+                  <form
+                    action="#"
+                    subject="Kontakt Sjelesorg i Asker"
+                    name="Sjelesorg i Asker - Kontakt skjema"
+                    data-netlify="true"
+                    method="POST"
+                  >
+                    <input
+                      type="hidden"
+                      name="form-name"
+                      value="Sjelesorg i Asker - Kontakt skjema"
+                    />
+                    <input
+                      type="hidden"
+                      name="tema"
+                      value="Kontakt Sjelesorg i Asker"
+                    />
+                    <div className="grid grid-cols-2 gap-6">
+                      <TextField
+                        label="Fornavn"
+                        id="first_name"
+                        name="first_name"
+                        type="text"
+                        autoComplete="given-name"
+                        required
+                      />
+                      <TextField
+                        label="Etternavn"
+                        id="last_name"
+                        name="last_name"
+                        type="text"
+                        autoComplete="family-name"
+                        required
+                      />
+                      <TextField
+                        label="Telefon"
+                        id="telefon"
+                        name="telefon"
+                        type="tel"
+                        autoComplete="tel"
+                        required
+                      />
+                      <TextField
+                        label="E-post"
+                        id="email"
+                        name="email"
+                        type="email"
+                        autoComplete="email"
+                        required
+                      />
+                      {/* <fieldset className="col-span-2">
                     <legend className="block text-base font-semibold text-stone-900">
                       Ønsker du en bestemt sjelesørger?
                     </legend>
@@ -148,86 +171,88 @@ export function Contact() {
                     </div>
                   </fieldset> */}
 
-                  <div className="col-span-2 pt-2">
-                    <div className="flex justify-between">
-                      <label
-                        htmlFor="form-message"
-                        className="block mb-2 text-base font-semibold text-stone-900"
-                      >
-                        Hva ønsker du å arbeide med i samtalene? (Ikke skriv
-                        sensitiv informasjon)
-                      </label>
-                      <span
-                        id="form-message-description"
-                        className="text-base text-slate-500"
-                      >
-                        {/* Max */}
-                      </span>
-                    </div>
-                    <div className="mt-1">
-                      <textarea
-                        id="form-message"
-                        required
-                        maxLength="500"
-                        name="form-message"
-                        aria-describedby="form-message-description"
-                        rows={4}
-                        className="shadow-none block w-full min-w-0 flex-auto appearance-none rounded-md border border-stone-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-stone-800/5 placeholder:text-stone-400 focus:border-fuchsia-500 focus:outline-none focus:ring-4 focus:ring-fuchsia-500/10 sm:text-base dark:border-stone-700 dark:bg-stone-700/[0.15] dark:text-stone-200 dark:placeholder:text-stone-500 dark:focus:border-fuchsia-400 dark:focus:ring-fuchsia-400/10"
-                        defaultValue={''}
-                      />
-                    </div>
-                  </div>
-                </div>
-                {/* Agree */}
-
-                <fieldset className="mt-6">
-                  <div className="space-y-8">
-                    <div className="relative flex items-start">
-                      <div className="flex items-center h-5">
-                        <input
-                          id="samtykke"
-                          name="samtykke"
-                          type="checkbox"
-                          required
-                          className="w-4 h-4 rounded border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
-                        />
-                      </div>
-                      <div className="ml-3 -mt-1 text-base ">
-                        <label
-                          htmlFor="samtykke"
-                          className="font-medium tracking-normal text-stone-600"
-                        >
-                          For å sikre at den sjelesorgen som gis blir best
-                          mulig, samtykker jeg i at min sjelesørger tar imot
-                          veiledning i et lukket forum. Ingen opplysninger vil
-                          bli gitt der som kan identifisere meg.
-                        </label>
+                      <div className="col-span-2 pt-2">
+                        <div className="flex justify-between">
+                          <label
+                            htmlFor="form-message"
+                            className="mb-2 block text-base font-semibold text-stone-900"
+                          >
+                            Hva ønsker du å arbeide med i samtalene? (Ikke skriv
+                            sensitiv informasjon)
+                          </label>
+                          <span
+                            id="form-message-description"
+                            className="text-base text-slate-500"
+                          >
+                            {/* Max */}
+                          </span>
+                        </div>
+                        <div className="mt-1">
+                          <textarea
+                            id="form-message"
+                            required
+                            maxLength="500"
+                            name="form-message"
+                            aria-describedby="form-message-description"
+                            rows={4}
+                            className="shadow-none block w-full min-w-0 flex-auto appearance-none rounded-md border border-stone-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-stone-800/5 placeholder:text-stone-400 focus:border-fuchsia-500 focus:outline-none focus:ring-4 focus:ring-fuchsia-500/10 sm:text-base dark:border-stone-700 dark:bg-stone-700/[0.15] dark:text-stone-200 dark:placeholder:text-stone-500 dark:focus:border-fuchsia-400 dark:focus:ring-fuchsia-400/10"
+                            defaultValue={''}
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </fieldset>
+                    {/* Agree */}
 
-                <div className="flex gap-6 sm:justify-end">
-                  <Button
-                    className="px-10 mt-8 w-fit"
-                    type="button"
-                    href="#kontakt"
-                    variant="outline"
-                    color="fuchsiaDark"
-                    onClick={() => window.location.reload()}
-                  >
-                    Slett
-                  </Button>
-                  <Button
-                    type="submit"
-                    color="fuchsia"
-                    className="px-10 mt-8 w-fit"
-                  >
-                    Send inn
-                  </Button>
-                </div>
-              </form>
-            </AuthLayout>
+                    <fieldset className="mt-6">
+                      <div className="space-y-8">
+                        <div className="relative flex items-start">
+                          <div className="flex h-5 items-center">
+                            <input
+                              id="samtykke"
+                              name="samtykke"
+                              type="checkbox"
+                              required
+                              className="h-4 w-4 rounded border-stone-300 text-fuchsia-600 focus:ring-fuchsia-500"
+                            />
+                          </div>
+                          <div className="-mt-1 ml-3 text-base ">
+                            <label
+                              htmlFor="samtykke"
+                              className="font-medium tracking-normal text-stone-600"
+                            >
+                              For å sikre at den sjelesorgen som gis blir best
+                              mulig, samtykker jeg i at min sjelesørger tar imot
+                              veiledning i et lukket forum. Ingen opplysninger
+                              vil bli gitt der som kan identifisere meg.
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <div className="flex gap-6 sm:justify-end">
+                      <Button
+                        className="mt-8 w-fit px-10"
+                        type="button"
+                        href="#kontakt"
+                        variant="outline"
+                        color="fuchsiaDark"
+                        onClick={() => window.location.reload()}
+                      >
+                        Slett
+                      </Button>
+                      <Button
+                        type="submit"
+                        color="fuchsia"
+                        className="mt-8 w-fit px-10"
+                      >
+                        Send inn
+                      </Button>
+                    </div>
+                  </form>
+                </AuthLayout>
+              </>
+            )}
             {/* <p className="mt-8 opacity-100">
               <Link
                 target="_blank"
