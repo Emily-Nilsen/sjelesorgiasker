@@ -19,6 +19,16 @@ function isPreviewClosed() {
   return new URLSearchParams(window.location.search).get('intake') === 'closed'
 }
 
+// Lokal forhåndsvisning av ÅPEN tilstand: med ?intake=open kan man se det
+// gjenåpnede skjemaet midt i inntaksstoppen (nyttig for å teste skjemaet).
+// Virker KUN i utvikling (next dev) – i produksjonsbygget ignoreres det helt,
+// slik at lenken aldri kan brukes til å omgå inntaksstoppen på den live siden.
+function isPreviewOpen() {
+  if (typeof window === 'undefined') return false
+  if (process.env.NODE_ENV === 'production') return false
+  return new URLSearchParams(window.location.search).get('intake') === 'open'
+}
+
 // Forsiden er statisk generert, så vi avgjør status på klienten for å få
 // riktig dato uten å måtte bygge siden på nytt. Standardverdien `false` gjør
 // at skjemaet alltid finnes i den statiske HTML-en (slik at Netlify fortsatt
@@ -26,7 +36,7 @@ function isPreviewClosed() {
 export function useIntakeClosed() {
   const [closed, setClosed] = useState(false)
   useEffect(() => {
-    setClosed(isIntakeClosed() || isPreviewClosed())
+    setClosed(isPreviewClosed() || (!isPreviewOpen() && isIntakeClosed()))
   }, [])
   return closed
 }

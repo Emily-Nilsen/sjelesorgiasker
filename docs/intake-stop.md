@@ -60,8 +60,15 @@ inclusive", set it to **00:00 Norwegian time on the day AFTER** the last closed 
 Append **`?intake=closed`** to any URL (e.g. `https://<site>/?intake=closed`) to see
 the closed state on demand, even outside the configured dates. This is a preview
 helper only: it can **force the closed state on**, but it can **never force the form
-open**, so it cannot be used to bypass a real closure. Nothing else exposes it; a
-normal visitor will never trigger it by accident.
+open** on the live site, so it cannot be used to bypass a real closure. Nothing else
+exposes it; a normal visitor will never trigger it by accident.
+
+There is also a **local-only** counterpart, **`?intake=open`**, for previewing the
+**reopened form** during a closure (handy for testing the form itself while the
+summer stop is active). It works **only under `next dev`** — the production build
+ignores it (guarded by `process.env.NODE_ENV === 'production'` in `isPreviewOpen()`),
+so it can **never** reopen the form on the deployed site. Use it at
+`http://localhost:3000/?intake=open`.
 
 ---
 
@@ -143,6 +150,7 @@ Optional visual check while developing:
 npm run dev
 # open http://localhost:3000              -> live behaviour for today's date
 # open http://localhost:3000/?intake=closed -> preview the closed state
+# open http://localhost:3000/?intake=open   -> preview the reopened form (dev only)
 ```
 
 ---

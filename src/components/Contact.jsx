@@ -5,9 +5,10 @@ import { Switch } from '@headlessui/react'
 
 import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
-import { RadioField, TextField } from '@/components/Fields'
+import { TextField } from '@/components/Fields'
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
+import { SelectMenu } from '@/components/SelectMenu'
 import { useIntakeClosed } from '@/lib/intakeStatus'
 
 import {
@@ -32,6 +33,17 @@ function FacebookIcon(props) {
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
+
+// Hvor folk har hørt om tilbudet (valgfritt felt i kontaktskjemaet).
+const referralOptions = [
+  'Anbefalt av venner/familie',
+  'Fastlege/lege',
+  'Gjennom kirken',
+  'Søk på internett',
+  'Facebook',
+  'Plakat/brosjyre',
+  'Annet',
+]
 
 export function Contact() {
   const [agreed, setAgreed] = useState(false)
@@ -200,6 +212,20 @@ export function Contact() {
                           />
                         </div>
                       </div>
+
+                      <SelectMenu
+                        className="col-span-2"
+                        name="hvor_hort"
+                        options={referralOptions}
+                        label={
+                          <>
+                            Hvor har du hørt om «Sjelesorg i Asker»?{' '}
+                            <span className="font-normal text-stone-500">
+                              (valgfritt)
+                            </span>
+                          </>
+                        }
+                      />
                     </div>
                     {/* Agree */}
 
