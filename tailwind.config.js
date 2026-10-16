@@ -48,8 +48,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
-        display: ['new-spirit', ...defaultTheme.fontFamily.serif],
-        mono: ['dico-code-one', ...defaultTheme.fontFamily.mono],
+        display: ['Fraunces', ...defaultTheme.fontFamily.serif],
+        mono: ['IBM Plex Mono', ...defaultTheme.fontFamily.mono],
       },
       keyframes: {
         blob: {

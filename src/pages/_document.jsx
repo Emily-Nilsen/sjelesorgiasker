@@ -23,10 +23,6 @@ export default function Document() {
           rel="stylesheet"
           href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap"
         />
-        <link
-          rel="stylesheet"
-          href="https://use.typekit.net/six0oik.css"
-        ></link>
         <link rel="icon" href="/images/logo-large.svg" />
       </Head>
       <body>

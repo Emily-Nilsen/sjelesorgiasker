@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* Fraunces' soft, sturdy small-optical-size cut is the closest match to
+     the New Spirit headings it replaces */
+  .font-display {
+    font-optical-sizing: none;
+    font-variation-settings: 'SOFT' 100, 'WONK' 0, 'opsz' 9;
+  }
+}
+
 @layer utilities {
   .animation-delay-2000 {
     animation-delay: 2s;
