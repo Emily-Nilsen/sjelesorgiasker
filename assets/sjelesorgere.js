@@ -108,6 +108,18 @@ const sjelesorgere = [
       'I møte med mennesker i en vanskelig livssituasjon er jeg opptatt å møte mennesker der de er i livet sitt.  Jeg kan tilføre noen andre perspektiver, sortere og løfte frem mestringsstrategier innenfor rammen av  sjelesorg og livets viktige spørsmål.',
     ],
   },
+  {
+    name: 'Elise Sandnes',
+    role: 'Pensjonert prest',
+    image: '/images/Elise_Sandnes.webp',
+    profile: [
+      'Jeg er utdannet prest og har tidligere arbeidet åtte år som prest i Heggedal og Østenstad menigheter. I den perioden tok jeg også pastoral klinisk utdanning som er etterutdanning i sjelesorg.',
+      'Gjennom førti år har jeg hatt ulike stillinger i Den norske kirke med leder- og personalansvar. Våren 2026 ble jeg pensjonist. Gjennom «Sjelesorg i Asker» ønsker jeg å bruke min erfaring og kompetanse fra prestetjeneste og et langt og variert yrkesliv i Den norske kirke.',
+      'Jeg har selv erfart å gå i sjelesorg / veiledning og har opplevd den store verdien det er å sette ord på egne tanker og følelser i dialog med en samtalepartner.',
+      'Du som ber om samtale, vet best hvor «skoen trykker» i eget liv og bestemmer selv hva du vil sette ord på i samtalen. Som sjelesørger vil jeg lytte og komme med innspill.',
+      'Jeg ser fram til å være en medvandrer.',
+    ],
+  },
 ]
 
 export default sjelesorgere
