@@ -22,7 +22,8 @@ export function Introduction() {
           Den norske kirke i Asker å løfte fram dette tilbudet. Du kan kontakte
           din lokale menighet for avtale med prest eller diakon, eller du kan få
           en avtale med en av sjelesørgerne i nettverket Sjelesorg i Asker. Vårt
-          mål er at sjelesorg skal være lett tilgengelig, trygt og gratis.
+          mål er at sjelesorg skal være lett tilgjengelig, trygt og gratis til
+          personer over 18 år.
         </p>
 
         <p className="mt-10">
